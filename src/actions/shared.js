@@ -6,7 +6,8 @@ export function handleInitialData () {
     return (dispatch) => {
         return getInitialData()
             .then(({ users, questions }) => {
-
+                dispatch(loadUsers(users))
+                dispatch(loadQuestions(questions))
             })
     }
 }
