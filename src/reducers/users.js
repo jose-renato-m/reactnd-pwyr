@@ -1,0 +1,1 @@
+import { LOAD_USERS } from '../actions/users'
