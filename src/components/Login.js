@@ -45,7 +45,9 @@ const LoginHeader = ( { image, form, loading }) => (
     <div>
         <Grid padded textAlign='center'>
             <Grid.Row className='login'>
-                
+                <Grid.Column width={16}>
+                    
+                </Grid.Column>
             </Grid.Row>
         </Grid>
     </div>
