@@ -41,7 +41,9 @@ export class Login extends Component {
     }
 }
 
-const LoginHeader = ( { image, form, loading }) => (
+const LoginHeader = 
+
+const LoginGridLayout = ({ image, form, loading }) => (
     <div>
         <Grid padded textAlign='center'>
             <Grid.Row className='login'>
@@ -59,7 +61,5 @@ const LoginHeader = ( { image, form, loading }) => (
         </Grid>
     </div>
 )
-
-const LoginGridLayout = 
 
 export default Login
