@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { handleInitialData } from '../actions/shared'
 
@@ -13,9 +13,12 @@ class App extends Component {
       <Router>
         <div className='App'>
           {authUser === null ? (
-
+            <Route
+              render={() => (
+                
+              )}
           ) : (
-            
+
           )
 
           }
