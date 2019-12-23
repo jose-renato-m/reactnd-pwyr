@@ -60,4 +60,6 @@ const LoginHeader = ( { image, form, loading }) => (
     </div>
 )
 
+const LoginGridLayout = 
+
 export default Login
