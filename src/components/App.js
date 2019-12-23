@@ -11,7 +11,14 @@ class App extends Component {
     const { authUser } = this.props
     return (
       <Router>
-        <div>
+        <div className='App'>
+          {authUser === null ? (
+
+          ) : (
+            
+          )
+
+          }
         Starter Code
         </div>
       </Router>
