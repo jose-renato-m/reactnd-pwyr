@@ -24,7 +24,12 @@ export class Login extends Component {
         return (
             <Fragment>
                 <Segment.Group>
-                    <LoginHeader />                    
+                    <LoginHeader />
+                    <LoginGridLayout
+                        image={<BrandImage />}
+                        form={<ConnectedLoginForm onLoading={this.handleLoading} />}
+                        loading={this.state.loading}
+                     />
                 </Segment.Group>
             </Fragment>
         )
