@@ -46,7 +46,11 @@ const LoginHeader = ( { image, form, loading }) => (
         <Grid padded textAlign='center'>
             <Grid.Row className='login'>
                 <Grid.Column width={16}>
-                    
+                    {loading === true && (
+                        <Dimmer active inverted>
+                            
+                        </Dimmer>
+                    )}
                 </Grid.Column>
             </Grid.Row>
         </Grid>
