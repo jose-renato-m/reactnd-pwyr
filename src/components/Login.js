@@ -51,6 +51,9 @@ const LoginHeader = ( { image, form, loading }) => (
                             <Loader inverted content='Loading' />
                         </Dimmer>
                     )}
+                    {image}
+                    <br />
+                    {form}
                 </Grid.Column>
             </Grid.Row>
         </Grid>
