@@ -7,6 +7,7 @@ class App extends Component {
     this.props.dispatch(handleInitialData())
   }
   render() {
+    const { authUser } = this.props
     return (
       <div>
         Starter Code
