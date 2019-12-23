@@ -24,7 +24,7 @@ export class Login extends Component {
         return (
             <Fragment>
                 <Segment.Group>
-                    
+                    <LoginHeader />                    
                 </Segment.Group>
             </Fragment>
         )
