@@ -44,6 +44,7 @@ export class Login extends Component {
 const LoginHeader = () => (
     <Header as='h4' block attached='top' textAlign='center'>
         <Header.Content>Welcome to Would You Rather App!</Header.Content>
+        <Header.Subheader>Please sign in to continue</Header.Subheader>
     </Header>
 )
 
