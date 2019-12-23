@@ -44,7 +44,9 @@ export class Login extends Component {
 const LoginHeader = ( { image, form, loading }) => (
     <div>
         <Grid padded textAlign='center'>
-            
+            <Grid.Row className='login'>
+                
+            </Grid.Row>
         </Grid>
     </div>
 )
