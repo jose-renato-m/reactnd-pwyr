@@ -41,4 +41,8 @@ export class Login extends Component {
     }
 }
 
+const LoginHeader = ( { image, form, loading }) => (
+    
+)
+
 export default Login
