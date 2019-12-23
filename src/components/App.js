@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { handleInitialData } from '../actions/shared'
 
