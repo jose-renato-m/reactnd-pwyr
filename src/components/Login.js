@@ -41,7 +41,11 @@ export class Login extends Component {
     }
 }
 
-const LoginHeader = 
+const LoginHeader = () => (
+    <Header as='h4' block attached='top' textAlign='center'>
+        
+    </Header>
+)
 
 const LoginGridLayout = ({ image, form, loading }) => (
     <div>
