@@ -19,6 +19,12 @@ export class Login extends Component {
     handleLoading = () => {
         this.setState({ loading: true })
     }
+
+    render() {
+        return (
+            
+        )
+    }
 }
 
 export default Login
