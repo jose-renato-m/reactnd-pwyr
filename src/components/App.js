@@ -10,9 +10,12 @@ class App extends Component {
   render() {
     const { authUser } = this.props
     return (
-      <div>
+      <Router>
+        <div>
         Starter Code
-      </div>
+        </div>
+      </Router>
+      
     )
   }  
 }
