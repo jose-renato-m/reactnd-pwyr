@@ -13,7 +13,12 @@ import {
 import { setAuthedUser } from '../actions/authedUser'
 
 export class Login extends Component {
-    
+    state = {
+        loading: false
+    }
+    handleLoading = () => {
+        this.setState({ loading: true })
+    }
 }
 
 export default Login
