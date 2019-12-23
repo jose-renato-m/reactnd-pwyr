@@ -42,7 +42,11 @@ export class Login extends Component {
 }
 
 const LoginHeader = ( { image, form, loading }) => (
-    
+    <div>
+        <Grid padded textAlign='center'>
+            
+        </Grid>
+    </div>
 )
 
 export default Login
