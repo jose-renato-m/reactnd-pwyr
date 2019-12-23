@@ -23,7 +23,9 @@ export class Login extends Component {
     render() {
         return (
             <Fragment>
-                
+                <Segment.Group>
+                    
+                </Segment.Group>
             </Fragment>
         )
     }
