@@ -12,4 +12,8 @@ import {
 } from 'semantic-ui-react'
 import { setAuthedUser } from '../actions/authedUser'
 
+export class Login extends Component {
+    
+}
+
 export default Login
