@@ -16,7 +16,9 @@ class App extends Component {
           {authUser === null ? (
             <Route
               render={() => (
-                
+                <ContentGrid>
+                  
+                </ContentGrid>
               )}
           ) : (
 
