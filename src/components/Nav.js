@@ -35,6 +35,7 @@ class Nav extends Component {
                                     spaced='right'
                                     verticalAlign='bottom'
                                  />
+                                {users[authedUser].name}
                             </span>
                         </Menu.Item>
                     </Menu.Menu>
