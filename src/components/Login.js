@@ -126,4 +126,9 @@ class LoginForm extends Component {
     }
 }
 
+const ConnectedLoginForm = connect(
+    mapStateToProps,
+    { setAuthedUser }
+)(LoginForm)
+
 export default Login
