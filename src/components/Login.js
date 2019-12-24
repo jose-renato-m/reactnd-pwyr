@@ -71,4 +71,8 @@ const BrandImage = () => (
     <Image src='https://www.stickpng.com/img/icons-logos-emojis/tech-companies/redux-logo' />
 )
 
+class LoginForm extends Component {
+    
+}
+
 export default Login
