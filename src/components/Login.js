@@ -84,7 +84,12 @@ class LoginForm extends Component {
     handleSubmit = e => {
         e.preventDefault()
         const { onLoading, setAuthedUser } = this.props
-        const authedUser = this.state.value        
+        const authedUser = this.state.value
+        
+        new Promise((res, rej) => {
+            onLoading()
+            setTimeout(() => res(), 500)
+        }).then(() => setAuthedUser(authedUser))
     }
 }
 
