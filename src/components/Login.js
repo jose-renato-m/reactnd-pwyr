@@ -92,7 +92,7 @@ class LoginForm extends Component {
         }).then(() => setAuthedUser(authedUser))
     }
     generateDropdownData = () => {
-        
+        const { users } = this.props
     }
 }
 
