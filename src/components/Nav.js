@@ -22,7 +22,9 @@ class Nav extends Component {
 
         return (
             <Container>
-                
+                <Responsive as={Menu} minWidth={651} pointing secondary>
+                    
+                </Responsive>
             </Container>
         )
     }
