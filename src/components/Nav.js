@@ -27,7 +27,16 @@ class Nav extends Component {
                     <Menu.Item name='new poll' as={NavLink} to='/add' />
                     <Menu.Item name='leader board' as={NavLink} to='/leaderboard' />
                     <Menu.Menu position='right'>
-                        
+                        <Menu.Item>
+                            <span>
+                                <Image
+                                    src={users[authedUser].avatarURL}
+                                    avatar
+                                    spaced='right'
+                                    verticalAlign='bottom'
+                                 />
+                            </span>
+                        </Menu.Item>
                     </Menu.Menu>
                 </Responsive>
             </Container>
