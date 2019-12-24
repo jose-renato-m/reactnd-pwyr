@@ -67,4 +67,8 @@ const LoginGridLayout = ({ image, form, loading }) => (
     </div>
 )
 
+const BrandImage = () => (
+    
+)
+
 export default Login
