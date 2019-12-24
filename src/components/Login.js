@@ -91,6 +91,9 @@ class LoginForm extends Component {
             setTimeout(() => res(), 500)
         }).then(() => setAuthedUser(authedUser))
     }
+    generateDropdownData = () => {
+        
+    }
 }
 
 export default Login
