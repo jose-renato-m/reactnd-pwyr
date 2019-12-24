@@ -9,5 +9,6 @@ import {
     Button,
     Container,
 } from 'semantic-ui-react'
+import { setAuthedUser } from '../actions/authedUser'
 
 export default connect()(Nav)
