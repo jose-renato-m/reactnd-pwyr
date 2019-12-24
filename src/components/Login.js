@@ -75,6 +75,9 @@ class LoginForm extends Component {
     static PropTypes = {
         onLoading: PropTypes.func.isRequired
     }
+    state = {
+        value: ''
+    }
 }
 
 export default Login
