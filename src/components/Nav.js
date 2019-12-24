@@ -25,6 +25,7 @@ class Nav extends Component {
                 <Responsive as={Menu} minWidth={651} pointing secondary>
                     <Menu.Item name='home' as={NavLink} to='/' exact />
                     <Menu.Item name='new poll' as={NavLink} to='/add' />
+                    <Menu.Item name='leader board' as={NavLink} to='/leaderboard' />
                 </Responsive>
             </Container>
         )
