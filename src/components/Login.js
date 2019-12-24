@@ -132,7 +132,9 @@ const ConnectedLoginForm = connect(
 )(LoginForm)
 
 function mapStateToProps({ users }) {
-    
+    return {
+        users: Object.values(users)
+    }
 }
 
 export default Login
