@@ -68,7 +68,7 @@ const LoginGridLayout = ({ image, form, loading }) => (
 )
 
 const BrandImage = () => (
-    
+    <Image src='https://www.stickpng.com/img/icons-logos-emojis/tech-companies/redux-logo' />
 )
 
 export default Login
