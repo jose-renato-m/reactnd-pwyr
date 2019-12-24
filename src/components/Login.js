@@ -107,7 +107,9 @@ class LoginForm extends Component {
 
         return (
             <Form onSubmit={this.handleSubmit}>
-                
+                <Header as='h2' color='green'>
+                    
+                </Header>
             </Form>
         )
     }
