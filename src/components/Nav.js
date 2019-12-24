@@ -23,7 +23,7 @@ class Nav extends Component {
         return (
             <Container>
                 <Responsive as={Menu} minWidth={651} pointing secondary>
-                    
+                    <Menu.Item name='home' as={NavLink} to='/' exact />
                 </Responsive>
             </Container>
         )
