@@ -16,6 +16,10 @@ class Nav extends Component {
         e.preventDefault()
         this.props.setAuthedUser(null)
     }
+
+    render() {
+        
+    }
 }
 
 export default connect()(Nav)
