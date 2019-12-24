@@ -18,7 +18,7 @@ class App extends Component {
             <Route
               render={() => (
                 <ContentGrid>
-                  
+                  <Login />
                 </ContentGrid>
               )}
           ) : (
