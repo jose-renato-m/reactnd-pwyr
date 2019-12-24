@@ -72,7 +72,9 @@ const BrandImage = () => (
 )
 
 class LoginForm extends Component {
-    
+    static PropTypes = {
+        onLoading: PropTypes.func.isRequired
+    }
 }
 
 export default Login
