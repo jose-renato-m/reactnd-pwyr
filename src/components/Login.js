@@ -101,6 +101,9 @@ class LoginForm extends Component {
             image: { avatar: true, src: user.avatarURL }
         }))
     }
+    render() {
+        
+    }
 }
 
 export default Login
