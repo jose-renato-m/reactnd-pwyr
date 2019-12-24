@@ -131,4 +131,8 @@ const ConnectedLoginForm = connect(
     { setAuthedUser }
 )(LoginForm)
 
+function mapStateToProps({ users }) {
+    
+}
+
 export default Login
