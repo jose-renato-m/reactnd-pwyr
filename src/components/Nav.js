@@ -11,4 +11,8 @@ import {
 } from 'semantic-ui-react'
 import { setAuthedUser } from '../actions/authedUser'
 
+class Nav extends Component {
+    
+}
+
 export default connect()(Nav)
