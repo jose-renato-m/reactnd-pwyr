@@ -12,7 +12,10 @@ import {
 import { setAuthedUser } from '../actions/authedUser'
 
 class Nav extends Component {
-    
+    handleLogout = e => {
+        e.preventDefault()
+        this.props.setAuthedUser(null)
+    }
 }
 
 export default connect()(Nav)
