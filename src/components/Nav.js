@@ -18,7 +18,7 @@ class Nav extends Component {
     }
 
     render() {
-        
+        const { authedUser, users } = this.props
     }
 }
 
