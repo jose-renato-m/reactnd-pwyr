@@ -120,6 +120,7 @@ class LoginForm extends Component {
                     onChange={this.onChange}
                     required
                  />
+                <Form.Button content='Login' positive disabled={disabled} fluid />
             </Form>
         )
     }
