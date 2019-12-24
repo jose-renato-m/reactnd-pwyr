@@ -81,6 +81,9 @@ class LoginForm extends Component {
     onChange = (e, { value }) => {
         this.setState({ value })
     }
+    handleSubmit = e => {
+        e.preventDefault()
+    }
 }
 
 export default Login
