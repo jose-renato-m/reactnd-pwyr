@@ -93,6 +93,13 @@ class LoginForm extends Component {
     }
     generateDropdownData = () => {
         const { users } = this.props
+
+        return users.map(user => ({
+            key: user.id,
+            text: user.name,
+            value: user.id,
+            image: { avatar: true, src: user.avatarURL }
+        }))
     }
 }
 
