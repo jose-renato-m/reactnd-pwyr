@@ -83,6 +83,7 @@ class LoginForm extends Component {
     }
     handleSubmit = e => {
         e.preventDefault()
+        const { onLoading, setAuthedUser } = this.props        
     }
 }
 
