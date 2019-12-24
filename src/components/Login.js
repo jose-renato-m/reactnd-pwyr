@@ -78,6 +78,9 @@ class LoginForm extends Component {
     state = {
         value: ''
     }
+    onChange = (e, { value }) => {
+        this.setState({ value })
+    }
 }
 
 export default Login
