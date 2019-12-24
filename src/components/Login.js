@@ -102,7 +102,7 @@ class LoginForm extends Component {
         }))
     }
     render() {
-        
+        const { value } = this.state
     }
 }
 
