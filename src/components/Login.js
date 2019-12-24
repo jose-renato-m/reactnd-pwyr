@@ -110,6 +110,16 @@ class LoginForm extends Component {
                 <Header as='h2' color='green'>
                     Sign In
                 </Header>
+                <Form.Dropdown
+                    placeholder='Select a Person'
+                    fluid
+                    selection
+                    scrolling
+                    options={this.generateDropdownData()}
+                    value={value}
+                    onChange={this.onChange}
+                    required
+                 />
             </Form>
         )
     }
