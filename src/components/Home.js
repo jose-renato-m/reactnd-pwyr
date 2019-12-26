@@ -7,6 +7,7 @@ export class Home extends Component {
         userQuestionData: PropTypes.object.isRequired
     }
     render() {
+        const { userQuestionData } = this.props
         
         return ()
     }
