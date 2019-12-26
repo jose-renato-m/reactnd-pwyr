@@ -25,7 +25,7 @@ class App extends Component {
              />
           ) : (
             <Fragment>
-              
+              <Nav />
             </Fragment>
 
           )
