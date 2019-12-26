@@ -63,6 +63,17 @@ class Nav extends Component {
                                  />
                                  {users[authedUser].name}
                             </Grid.Column>
+                            <Grid.Column verticalAlign='bottom' textAlign='right'>
+                                <Button
+                                    content='Logout'
+                                    labelPosition='right'
+                                    basic
+                                    compact
+                                    icon='log out'
+                                    size='mini'
+                                    onClick={this.handleLogout}
+                                 />
+                            </Grid.Column>
                         </Grid.Row>
                     </Grid>
                 </Responsive>
