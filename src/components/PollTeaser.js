@@ -25,7 +25,9 @@ export class PollTeaser extends Component {
         }
         return (
             <Fragment>
-                
+                <Header as='h5' textAlign='left'>
+                    Would you rather
+                </Header>
             </Fragment>
         )
     }
