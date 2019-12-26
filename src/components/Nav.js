@@ -39,7 +39,15 @@ class Nav extends Component {
                             </span>
                         </Menu.Item>  
                         <Menu.Item>
-                            
+                            <Button
+                                content='Logout'
+                                labelPosition='right'
+                                basic
+                                compact
+                                icon='log out'
+                                size='mini'
+                                onClick={this.handleLogout}
+                             />
                         </Menu.Item>                      
                     </Menu.Menu>
                 </Responsive>
