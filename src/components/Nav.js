@@ -61,7 +61,7 @@ class Nav extends Component {
                                     spaced='right'
                                     verticalAlign='bottom'
                                  />
-                                 {users[authedUser].name}
+                                {users[authedUser].name}
                             </Grid.Column>
                             <Grid.Column verticalAlign='bottom' textAlign='right'>
                                 <Button
@@ -100,6 +100,7 @@ class Nav extends Component {
                                     spaced='right'
                                     verticalAlign='bottom'
                                  />
+                                {users[authedUser].name}
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
