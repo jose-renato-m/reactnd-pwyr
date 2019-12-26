@@ -21,7 +21,7 @@ export class PollTeaser extends Component {
         const buttonContent = unanswered === true ? 'Answer Poll' : 'Results'
 
         if (this.state.viewPoll === true) {
-            
+            return <Redirect push to={`/questions/${question.id}`} />
         }
     }
 }
