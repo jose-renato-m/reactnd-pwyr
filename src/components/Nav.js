@@ -51,6 +51,9 @@ class Nav extends Component {
                         </Menu.Item>                      
                     </Menu.Menu>
                 </Responsive>
+                <Responsive as={Fragment} minWidth={375} maxWidth={650}>
+                    
+                </Responsive>
             </Container>
         )
     }
