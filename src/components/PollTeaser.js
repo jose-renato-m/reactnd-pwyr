@@ -33,6 +33,13 @@ export class PollTeaser extends Component {
                     <br />
                     or...
                 </p>
+                <Button
+                    color={buttonColor.name}
+                    size='tiny'
+                    fluid
+                    onClick={this.handleClick}
+                    content={buttonContent}
+                 />
             </Fragment>
         )
     }
