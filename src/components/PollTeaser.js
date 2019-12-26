@@ -10,6 +10,11 @@ export class PollTeaser extends Component {
     state = {
         viewPoll: false
     }
+    handleClick = e => {
+        this.setState(prevState => ({
+            viewPoll: !prevState.viewPoll
+        }))
+    }
 }
 
 export default PollTeaser
