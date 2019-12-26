@@ -90,6 +90,9 @@ class Nav extends Component {
                         </Grid.Row>
                     </Grid>
                 </Responsive>
+                <Responsive as={Fragment} maxWidth={374}>
+                    
+                </Responsive>
             </Container>
         )
     }
