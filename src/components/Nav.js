@@ -78,7 +78,13 @@ class Nav extends Component {
                         <Grid.Row>
                             <Grid.Column width={16}>
                                 <Menu pointing secondary widths={3}>
-                                    
+                                    <Menu.Item name='home' as={NavLink} to='/' exact />
+                                    <Menu.Item name='new poll' as={NavLink} to='/add' />
+                                    <Menu.Item
+                                        name='leader board'
+                                        as={NavLink}
+                                        to='/leaderboard'
+                                     />
                                 </Menu>
                             </Grid.Column>
                         </Grid.Row>
