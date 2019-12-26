@@ -52,7 +52,11 @@ class Nav extends Component {
                     </Menu.Menu>
                 </Responsive>
                 <Responsive as={Fragment} minWidth={375} maxWidth={650}>
-                    
+                    <Grid columns={2} padded='vertically'>
+                        <Grid.Row>
+                            
+                        </Grid.Row>
+                    </Grid>
                 </Responsive>
             </Container>
         )
