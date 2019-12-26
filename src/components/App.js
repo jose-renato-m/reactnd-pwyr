@@ -26,6 +26,9 @@ class App extends Component {
           ) : (
             <Fragment>
               <Nav />
+              <ContentGrid>
+                
+              </ContentGrid>
             </Fragment>
 
           )
