@@ -39,8 +39,10 @@ class App extends Component {
   }  
 }
 
-const ContentGrid = () => (
-  
+const ContentGrid = ({ children }) => (
+  <Grid padded='vertically' columns={1} centered>
+    
+  </Grid>
 )
 
 export default connect()(App)
