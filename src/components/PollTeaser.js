@@ -7,6 +7,9 @@ export class PollTeaser extends Component {
         question: PropTypes.object.isRequired,
         unanswered: PropTypes.bool.isRequired,
     }
+    state = {
+        viewPoll: false
+    }
 }
 
 export default PollTeaser
