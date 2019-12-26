@@ -28,20 +28,19 @@ class App extends Component {
               <Nav />
               <ContentGrid>
                 <Switch>
-                  
+
                 </Switch>
               </ContentGrid>
             </Fragment>
-
-          )
-
-          }
-        Starter Code
+          )}        
         </div>
-      </Router>
-      
+      </Router>      
     )
   }  
 }
+
+const ContentGrid = () => (
+  
+)
 
 export default connect()(App)
