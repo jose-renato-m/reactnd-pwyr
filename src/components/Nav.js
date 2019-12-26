@@ -61,6 +61,7 @@ class Nav extends Component {
                                     spaced='right'
                                     verticalAlign='bottom'
                                  />
+                                 {users[authedUser].name}
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
