@@ -28,6 +28,11 @@ export class PollTeaser extends Component {
                 <Header as='h5' textAlign='left'>
                     Would you rather
                 </Header>
+                <p style={{ textAlign: 'center' }}>
+                    {question.optionOne.text}
+                    <br />
+                    or...
+                </p>
             </Fragment>
         )
     }
