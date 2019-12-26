@@ -113,6 +113,11 @@ class Nav extends Component {
                                  />
                             </Grid.Column>
                         </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Column>
+                                
+                            </Grid.Column>
+                        </Grid.Row>
                     </Grid>
                 </Responsive>
             </Container>
