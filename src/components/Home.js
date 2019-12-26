@@ -10,7 +10,7 @@ export class Home extends Component {
     render() {
         const { userQuestionData } = this.props
 
-        return ()
+        return <Tab panes={panes({ userQuestionData })} className='tab' />
     }
 }
 
