@@ -6,6 +6,10 @@ export class Home extends Component {
     static propTypes = {
         userQuestionData: PropTypes.object.isRequired
     }
+    render() {
+        
+        return ()
+    }
 }
 
 export default connect()(Home)
