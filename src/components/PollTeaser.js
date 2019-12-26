@@ -24,7 +24,9 @@ export class PollTeaser extends Component {
             return <Redirect push to={`/questions/${question.id}`} />
         }
         return (
-            
+            <Fragment>
+                
+            </Fragment>
         )
     }
 }
