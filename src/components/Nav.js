@@ -77,7 +77,9 @@ class Nav extends Component {
                         </Grid.Row>
                         <Grid.Row>
                             <Grid.Column width={16}>
-                                
+                                <Menu pointing secondary widths={3}>
+                                    
+                                </Menu>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
