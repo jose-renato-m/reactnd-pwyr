@@ -37,7 +37,10 @@ class Nav extends Component {
                                  />
                                 {users[authedUser].name}
                             </span>
-                        </Menu.Item>
+                        </Menu.Item>  
+                        <Menu.Item>
+                            
+                        </Menu.Item>                      
                     </Menu.Menu>
                 </Responsive>
             </Container>
