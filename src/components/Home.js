@@ -14,4 +14,8 @@ export class Home extends Component {
     }
 }
 
+const panes = props => {
+    
+}
+
 export default connect()(Home)
