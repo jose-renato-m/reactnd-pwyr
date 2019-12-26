@@ -23,6 +23,9 @@ export class PollTeaser extends Component {
         if (this.state.viewPoll === true) {
             return <Redirect push to={`/questions/${question.id}`} />
         }
+        return (
+            
+        )
     }
 }
 
