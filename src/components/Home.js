@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import { Tab } from 'semantic-ui-react'
 
 export class Home extends Component {
     static propTypes = {
@@ -8,7 +9,7 @@ export class Home extends Component {
     }
     render() {
         const { userQuestionData } = this.props
-        
+
         return ()
     }
 }
