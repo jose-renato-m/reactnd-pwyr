@@ -54,7 +54,14 @@ class Nav extends Component {
                 <Responsive as={Fragment} minWidth={375} maxWidth={650}>
                     <Grid columns={2} padded='vertically'>
                         <Grid.Row>
-                            
+                            <Grid.Column>
+                                <Image
+                                    src={users[authedUser].avatarURL}
+                                    avatar
+                                    spaced='right'
+                                    verticalAlign='bottom'
+                                 />
+                            </Grid.Column>
                         </Grid.Row>
                     </Grid>
                 </Responsive>
