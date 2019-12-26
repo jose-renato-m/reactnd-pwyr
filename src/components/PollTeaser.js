@@ -16,7 +16,7 @@ export class PollTeaser extends Component {
         }))
     }
     render() {
-        
+        const { question, unanswered } = this.props
     }
 }
 
