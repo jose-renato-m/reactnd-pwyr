@@ -133,4 +133,11 @@ class Nav extends Component {
     }
 }
 
+function mapStateToProps({ users, authedUser }) {
+    return {
+        authedUser,
+        users,
+    }
+}
+
 export default connect()(Nav)
