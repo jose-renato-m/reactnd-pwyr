@@ -15,6 +15,9 @@ export class PollTeaser extends Component {
             viewPoll: !prevState.viewPoll
         }))
     }
+    render() {
+        
+    }
 }
 
 export default PollTeaser
