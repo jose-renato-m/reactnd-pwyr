@@ -15,7 +15,7 @@ export class Home extends Component {
 }
 
 const panes = props => {
-    
+    const { userQuestionData } = props
 }
 
 export default connect()(Home)
