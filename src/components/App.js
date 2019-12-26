@@ -41,7 +41,9 @@ class App extends Component {
 
 const ContentGrid = ({ children }) => (
   <Grid padded='vertically' columns={1} centered>
-    
+    <Grid.Row>
+      <Grid.Column style={{ maxWidth: 550 }}>{children}</Grid.Column>
+    </Grid.Row>
   </Grid>
 )
 
