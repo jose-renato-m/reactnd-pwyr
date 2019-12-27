@@ -12,3 +12,7 @@ export const colors = {
         hex: '#d4d4d5'
     },
 }
+
+export const styles = {
+    
+}
