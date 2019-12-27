@@ -18,7 +18,7 @@ export class PollQuestion extends Component {
     handleSubmit = (e) => {
         e.preventDefault()
         if (this.state.value !== '') {
-            
+            const { authedUser, question, handleSaveQuestionAnswer } = this.props
         }
     }
 }
