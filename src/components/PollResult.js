@@ -42,6 +42,11 @@ export class PollResult extends Component {
 
         let option1 = styles.secondary,
             option2 = styles.secondary,
+        if (optionOneVotes > optionTwoVotes) {
+            option1 = styles.primary
+        } else (optionTwoVotes > optionOneVotes) {
+            option2 = styles.primary
+        }
     }
 }
 
