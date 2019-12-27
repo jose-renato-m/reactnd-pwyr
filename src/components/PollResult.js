@@ -52,6 +52,9 @@ export class PollResult extends Component {
             <Fragment>
                 <Header as='h3'>
                     Results:
+                    <Header.Subheader style={{ fontWeight: 'bold' }}>
+                        Would you rather
+                    </Header.Subheader>
                 </Header>
             </Fragment>
         )
