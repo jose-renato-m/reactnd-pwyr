@@ -20,3 +20,7 @@ function addAnswerToUser(authedUser, qid, answer) {
         answer,
     }
 }
+
+export function handleSaveQuestionAnswer(authedUser, qid, answer) {
+    
+}
