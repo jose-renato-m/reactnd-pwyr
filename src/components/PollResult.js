@@ -35,6 +35,10 @@ export class PollResult extends Component {
 
     render() {
         const { question, user } = this.props
+        const optionOneVotes = question.optionOne.votes.length
+        const optionTwoVotes = question.optionTwo.votes.length
+        const votesTotal = optionOneVotes + optionTwoVotes
+        const userVotes = user.answers[question.id]
     }
 }
 
