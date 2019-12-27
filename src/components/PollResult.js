@@ -15,6 +15,11 @@ import { styles } from '../utils/supports'
 const yourVoteLabel = () => (
     <Label color='orange' ribbon='right' className='vote'>
         <Icon name='check circle outline' size='big' className='compact' />
+        <div style={{ float: 'right' }}>
+            Your
+            <br />
+            Vote
+        </div>
     </Label>
 )
 
