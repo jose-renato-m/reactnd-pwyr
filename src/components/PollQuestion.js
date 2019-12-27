@@ -25,6 +25,7 @@ export class PollQuestion extends Component {
 
     render() {
         const { question } = this.props
+        const disabled = this.state.value === '' ? true : false
         return (
 
         )
