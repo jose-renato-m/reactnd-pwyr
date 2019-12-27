@@ -70,4 +70,11 @@ export class PollQuestion extends Component {
     }
 }
 
+function mapStateToProps() {
+
+    return {
+        
+    }
+}
+
 export default connect()(PollQuestion)
