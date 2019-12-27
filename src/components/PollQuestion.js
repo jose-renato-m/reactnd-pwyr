@@ -55,7 +55,14 @@ export class PollQuestion extends Component {
                          />
                     </Form.Field>
                     <Form.Field>
-                        
+                        <Button
+                            color='green'
+                            size='tiny'
+                            fluid
+                            positive
+                            disabled={disabled}
+                            content='Submit'
+                         />
                     </Form.Field>
                 </Form>
             </Fragment>
