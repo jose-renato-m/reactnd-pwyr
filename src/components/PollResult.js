@@ -50,7 +50,9 @@ export class PollResult extends Component {
 
         return (
             <Fragment>
-                
+                <Header as='h3'>
+                    Results:
+                </Header>
             </Fragment>
         )
     }
