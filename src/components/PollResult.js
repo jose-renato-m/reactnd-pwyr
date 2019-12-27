@@ -32,6 +32,10 @@ export class PollResult extends Component {
     handleClick = () => {
         this.props.history.push('/')
     }
+
+    render() {
+        
+    }
 }
 
 export default withRouter(connect()(PollResult))
