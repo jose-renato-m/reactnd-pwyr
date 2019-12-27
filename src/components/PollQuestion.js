@@ -24,8 +24,9 @@ export class PollQuestion extends Component {
     }
 
     render() {
+        const { question } = this.props
         return (
-            
+
         )
     }
 }
