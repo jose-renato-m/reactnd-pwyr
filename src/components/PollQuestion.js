@@ -38,7 +38,21 @@ export class PollQuestion extends Component {
                 <Header as='h4'>Would you rather</Header>
                 <Form onSubmit={this.handleSubmit}>
                     <Form.Field>
-                        
+                        <Radio
+                            label={question.optionOne.text}
+                            name='radioGroup'
+                            value='optionOne'
+                            checked={this.state.value === 'optionOne'}
+                            onChange={this.handleChange}
+                         />
+                         <br />
+                         <Radio
+                            label={question.optionTwo.text}
+                            name='radioGroup'
+                            value='optionTwo'
+                            checked={this.state.value === 'optionTwo'}
+                            onChange={this.handleChange}
+                         />
                     </Form.Field>
                 </Form>
             </Fragment>
