@@ -11,3 +11,9 @@ export function loadQuestions (questions) {
         questions,
     }
 }
+
+export function addAnswerToQuestion() {
+    return {
+        
+    }
+}
