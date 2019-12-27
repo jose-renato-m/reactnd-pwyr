@@ -15,8 +15,11 @@ export class PollQuestion extends Component {
 
     handleChange = (e, { value }) => this.setState({ value })
 
-    handleSubmit = () => {
-        
+    handleSubmit = (e) => {
+        e.preventDefault()
+        if (this.state.value !== '') {
+            
+        }
     }
 }
 
