@@ -79,4 +79,7 @@ function mapStateToProps({ authedUser }, { match }) {
     }
 }
 
-export default connect()(PollQuestion)
+export default connect(
+    mapStateToProps,
+    { handleSaveQuestionAnswer }
+)(PollQuestion)
