@@ -70,10 +70,10 @@ export class PollQuestion extends Component {
     }
 }
 
-function mapStateToProps() {
+function mapStateToProps({ authedUser }, { match }) {
 
     return {
-        
+        authedUser,
     }
 }
 
