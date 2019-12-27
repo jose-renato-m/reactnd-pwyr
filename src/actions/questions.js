@@ -28,8 +28,13 @@ function addQuestion(question) {
     }
 }
 
-export function handleSaveQuestion() {
-    return () => {
-        
+export function handleSaveQuestion(optionOneText, optionTwoText, author) {
+    return (dispatch) => {
+        return saveQuestion({ optionOneText, optionTwoText, author }).then(
+            (question) => {
+                dispatch(addQuestion(question))
+                dispatch(addQuestionToUser(question))
+            }   
+        )
     }
 }
