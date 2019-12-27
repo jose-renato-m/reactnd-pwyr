@@ -101,4 +101,4 @@ function mapStateToProps({ users, authedUser }) {
     }
 }
 
-export default withRouter(connect()(PollResult))
+export default withRouter(connect(mapStateToProps)(PollResult))
