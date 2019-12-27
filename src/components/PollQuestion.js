@@ -19,6 +19,7 @@ export class PollQuestion extends Component {
         e.preventDefault()
         if (this.state.value !== '') {
             const { authedUser, question, handleSaveQuestionAnswer } = this.props
+            handleSaveQuestionAnswer(authedUser, question.id, this.state.value)
         }
     }
 }
