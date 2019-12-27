@@ -20,3 +20,9 @@ export function addAnswerToQuestion(authedUser, qid, answer) {
         answer,
     }
 }
+
+function addQuestion() {
+    return {
+        
+    }
+}
