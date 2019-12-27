@@ -12,4 +12,8 @@ import {
 } from 'semantic-ui-react'
 import { styles } from '../utils/supports'
 
+const yourVoteLabel = () => (
+    
+)
+
 export default withRouter(connect()(PollResult))
