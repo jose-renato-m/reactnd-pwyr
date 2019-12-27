@@ -72,7 +72,7 @@ export class PollQuestion extends Component {
 
 function mapStateToProps({ authedUser }, { match }) {
     const { question_id } = match.params
-    const question = questions[question_id]
+    const questions = questions[question_id]
 
     return {
         authedUser,
