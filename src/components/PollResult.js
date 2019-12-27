@@ -13,7 +13,9 @@ import {
 import { styles } from '../utils/supports'
 
 const yourVoteLabel = () => (
-    
+    <Label color='orange' ribbon='right' className='vote'>
+        
+    </Label>
 )
 
 export default withRouter(connect()(PollResult))
