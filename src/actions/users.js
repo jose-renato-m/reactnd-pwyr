@@ -31,3 +31,7 @@ export function handleSaveQuestionAnswer(authedUser, qid, answer) {
         })
     }
 }
+
+export function addQuestionToUser({ id, author }) {
+    
+}
