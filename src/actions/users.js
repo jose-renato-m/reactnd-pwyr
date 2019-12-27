@@ -11,3 +11,7 @@ export function loadUsers (users) {
         users,
     }
 }
+
+function addAnswerToUser(authedUser, qid, answer) {
+    
+}
