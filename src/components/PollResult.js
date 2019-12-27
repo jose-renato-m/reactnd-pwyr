@@ -24,7 +24,11 @@ const yourVoteLabel = () => (
 )
 
 export class PollResult extends Component {
-    
+    static propTypes = {
+        history: PropTypes.object.isRequired,
+        question: PropTypes.object.isRequired,
+        user: PropTypes.object.isRequired
+    }
 }
 
 export default withRouter(connect()(PollResult))
