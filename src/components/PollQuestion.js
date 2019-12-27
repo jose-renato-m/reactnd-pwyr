@@ -34,7 +34,9 @@ export class PollQuestion extends Component {
         const disabled = this.state.value === '' ? true : false
 
         return (
-
+            <Fragment>
+                
+            </Fragment>
         )
     }
 }
