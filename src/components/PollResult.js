@@ -10,5 +10,6 @@ import {
     Button,
     Icon,
 } from 'semantic-ui-react'
+import { styles } from '../utils/supports'
 
 export default withRouter(connect()(PollResult))
