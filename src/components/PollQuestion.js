@@ -5,7 +5,9 @@ import { handleSaveQuestionAnswer } from '../actions/users'
 
 export class PollQuestion extends Component {
     static propTypes = {
-        authedUser: PropTypes.string.isRequired        
+        authedUser: PropTypes.string.isRequired
+        handleSaveQuestionAnswer: PropTypes.func.isRequired,
+        question: PropTypes.object.isRequired,   
     }
 }
 
