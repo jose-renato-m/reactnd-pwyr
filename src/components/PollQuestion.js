@@ -9,6 +9,9 @@ export class PollQuestion extends Component {
         handleSaveQuestionAnswer: PropTypes.func.isRequired,
         question: PropTypes.object.isRequired,   
     }
+    state = {
+        value: ''
+    }
 }
 
 export default connect()(PollQuestion)
