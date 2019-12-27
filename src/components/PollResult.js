@@ -84,6 +84,11 @@ export class PollResult extends Component {
                         {optionTwoVotes} out of {votesTotal} votes
                     </Progress>
                 </Segment>
+                {/* <Form.Field> */}
+                <Button size='tiny' floated='right' onClick={this.handleClick}>
+                    Back
+                </Button>
+                {/* </Form.Field> */}
             </Fragment>
         )
     }
