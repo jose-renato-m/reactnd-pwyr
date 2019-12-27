@@ -49,7 +49,9 @@ export class PollResult extends Component {
         }
 
         return (
-            
+            <Fragment>
+                
+            </Fragment>
         )
     }
 }
