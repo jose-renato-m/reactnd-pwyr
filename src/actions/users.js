@@ -22,7 +22,10 @@ function addAnswerToUser(authedUser, qid, answer) {
 }
 
 export function handleSaveQuestionAnswer(authedUser, qid, answer) {
-    return () => {
+    return (dispatch) => {
+        dispatch(addAnswerToUser(authedUser, qid, answer))
+        dispatch(addAnswerToQuestion(authedUser, qid, answer))
+
         
     }
 }
