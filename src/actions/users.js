@@ -13,5 +13,10 @@ export function loadUsers (users) {
 }
 
 function addAnswerToUser(authedUser, qid, answer) {
-    
+    return {
+        type: ADD_ANSWER_TO_USER,
+        authedUser,
+        qid,
+        answer,
+    }
 }
