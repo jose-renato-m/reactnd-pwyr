@@ -23,4 +23,8 @@ const yourVoteLabel = () => (
     </Label>
 )
 
+export class PollResult extends Component {
+    
+}
+
 export default withRouter(connect()(PollResult))
