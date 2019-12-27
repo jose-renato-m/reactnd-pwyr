@@ -29,6 +29,9 @@ export class PollResult extends Component {
         question: PropTypes.object.isRequired,
         user: PropTypes.object.isRequired
     }
+    handleClick = () => {
+        this.props.history.push('/')
+    }
 }
 
 export default withRouter(connect()(PollResult))
