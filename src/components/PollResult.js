@@ -62,6 +62,13 @@ export class PollResult extends Component {
                 >
                     {userVote === 'optionOne' && <yourVoteLabel />}
                     <p style={{ fontWeight: 'bold' }}>{question.optionOne.text}</p>
+                    <Progress
+                        percent={((optionOneVotes / votesTotal) * 100).toFixed(2)}
+                        progress
+                        color={option1.color}
+                    >
+                        {optionOneVotes} out of {votesTotal} votes
+                    </Progress>
                 </Segment>
             </Fragment>
         )
