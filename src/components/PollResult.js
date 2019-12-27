@@ -56,6 +56,12 @@ export class PollResult extends Component {
                         Would you rather
                     </Header.Subheader>
                 </Header>
+                <Segment
+                    color={option1.color}
+                    style={{ backgroundColor: `${option1.bgColor}` }}
+                >
+                    {userVote === 'optionOne' && <yourVoteLabel />}
+                </Segment>
             </Fragment>
         )
     }
