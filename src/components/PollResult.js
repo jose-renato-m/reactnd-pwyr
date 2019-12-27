@@ -34,7 +34,7 @@ export class PollResult extends Component {
     }
 
     render() {
-        
+        const { question, user } = this.props
     }
 }
 
