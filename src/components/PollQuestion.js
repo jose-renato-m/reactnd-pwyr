@@ -36,6 +36,9 @@ export class PollQuestion extends Component {
         return (
             <Fragment>
                 <Header as='h4'>Would you rather</Header>
+                <Form onSubmit={this.handleSubmit}>
+                    
+                </Form>
             </Fragment>
         )
     }
