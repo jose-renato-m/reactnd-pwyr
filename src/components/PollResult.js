@@ -70,6 +70,12 @@ export class PollResult extends Component {
                         {optionOneVotes} out of {votesTotal} votes
                     </Progress>
                 </Segment>
+                <Segment
+                    color={option2.color}
+                    style={{ backgroundColor: `${option2.bgColor}` }}
+                >
+                    {userVote === 'optionTwo' && <yourVoteLabel />}
+                </Segment>
             </Fragment>
         )
     }
