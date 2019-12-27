@@ -14,6 +14,10 @@ export class PollQuestion extends Component {
     }
 
     handleChange = (e, { value }) => this.setState({ value })
+
+    handleSubmit = () => {
+        
+    }
 }
 
 export default connect()(PollQuestion)
