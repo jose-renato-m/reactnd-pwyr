@@ -61,6 +61,7 @@ export class PollResult extends Component {
                     style={{ backgroundColor: `${option1.bgColor}` }}
                 >
                     {userVote === 'optionOne' && <yourVoteLabel />}
+                    <p style={{ fontWeight: 'bold' }}>{question.optionOne.text}</p>
                 </Segment>
             </Fragment>
         )
