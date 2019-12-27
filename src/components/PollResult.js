@@ -94,4 +94,8 @@ export class PollResult extends Component {
     }
 }
 
+function mapStateToProps({ users, authedUser }) {
+    
+}
+
 export default withRouter(connect()(PollResult))
