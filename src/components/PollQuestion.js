@@ -54,6 +54,9 @@ export class PollQuestion extends Component {
                             onChange={this.handleChange}
                          />
                     </Form.Field>
+                    <Form.Field>
+                        
+                    </Form.Field>
                 </Form>
             </Fragment>
         )
