@@ -96,6 +96,9 @@ export class PollResult extends Component {
 
 function mapStateToProps({ users, authedUser }) {
     const user = users[authedUser]
+    return {
+        user
+    }
 }
 
 export default withRouter(connect()(PollResult))
