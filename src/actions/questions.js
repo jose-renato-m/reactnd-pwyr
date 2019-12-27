@@ -12,8 +12,11 @@ export function loadQuestions (questions) {
     }
 }
 
-export function addAnswerToQuestion() {
+export function addAnswerToQuestion(authedUser, qid, answer) {
     return {
-        
+        type: ADD_ANSWER_TO_QUESTION,
+        authedUser,
+        qid,
+        answer,
     }
 }
