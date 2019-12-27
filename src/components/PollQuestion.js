@@ -22,6 +22,12 @@ export class PollQuestion extends Component {
             handleSaveQuestionAnswer(authedUser, question.id, this.state.value)
         }
     }
+
+    render() {
+        return (
+            
+        )
+    }
 }
 
 export default connect()(PollQuestion)
