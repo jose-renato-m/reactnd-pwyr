@@ -12,6 +12,8 @@ export class PollQuestion extends Component {
     state = {
         value: ''
     }
+
+    handleChange = (e, { value }) => this.setState({ value })
 }
 
 export default connect()(PollQuestion)
