@@ -27,3 +27,9 @@ function addQuestion(question) {
         question,
     }
 }
+
+export function handleSaveQuestion() {
+    return () => {
+        
+    }
+}
