@@ -35,7 +35,7 @@ export class PollQuestion extends Component {
 
         return (
             <Fragment>
-                
+                <Header as='h4'>Would you rather</Header>
             </Fragment>
         )
     }
