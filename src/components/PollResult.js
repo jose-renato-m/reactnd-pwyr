@@ -14,7 +14,7 @@ import { styles } from '../utils/supports'
 
 const yourVoteLabel = () => (
     <Label color='orange' ribbon='right' className='vote'>
-        
+        <Icon name='check circle outline' size='big' className='compact' />
     </Label>
 )
 
