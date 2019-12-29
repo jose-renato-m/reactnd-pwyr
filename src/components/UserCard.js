@@ -48,6 +48,14 @@ export class UserCard extends Component {
                 >
                     {author.name} asks:
                 </Header>
+
+                <Grid divided padded>
+                    <Grid.Row>
+                        <Grid.Column width={11}>
+                            
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
             </Segment.Group>
         )
     }
