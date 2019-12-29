@@ -4,5 +4,6 @@ import { connect } from 'react-redux'
 import PollQuestion from './PollQuestion'
 import PollResult from './PollResult'
 import PollTeaser from './PollTeaser'
+import { colors } from '../utils/supports'
 
 export default connect()(UserCard)
