@@ -29,6 +29,7 @@ export class UserCard extends Component {
         }
 
         const tabColor = unanswered === true ? colors.green : colors.blue
+        const borderTop = unanswered === null ? `1px solid ${colors.grey}` : `2px solid ${tabColor.hex}`
     }
 }
 
