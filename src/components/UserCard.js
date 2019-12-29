@@ -22,6 +22,10 @@ export class UserCard extends Component {
             badPath,
             unanswered = null
         } = this.props
+
+        if (badPath === true) {
+            
+        }
     }
 }
 
