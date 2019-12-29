@@ -14,6 +14,9 @@ export class UserCard extends Component {
         unanswered: PropTypes.bool,
         question_id: PropTypes.string,
     }
+    render() {
+        
+    }
 }
 
 export default connect()(UserCard)
