@@ -7,7 +7,13 @@ import PollTeaser from './PollTeaser'
 import { colors } from '../utils/supports'
 
 export class UserCard extends Component {
-
+    static propTypes = {
+        question: PropTypes.object,
+        author: PropTypes.object,
+        pollType: PropTypes.string,
+        unanswered: PropTypes.bool,
+        question_id: PropTypes.string,
+    }
 }
 
 export default connect()(UserCard)
