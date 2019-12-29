@@ -2,6 +2,12 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
+import {
+    Segment,
+    Header,
+    Grid,
+    Image,
+} from 'semantic-ui-react'
 import PollQuestion from './PollQuestion'
 import PollResult from './PollResult'
 import PollTeaser from './PollTeaser'
@@ -32,7 +38,7 @@ export class UserCard extends Component {
         const borderTop = unanswered === null ? `1px solid ${colors.grey}` : `2px solid ${tabColor.hex}`
 
         return (
-            
+
         )
     }
 }
