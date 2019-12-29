@@ -15,7 +15,13 @@ export class UserCard extends Component {
         question_id: PropTypes.string,
     }
     render() {
-        
+        const {
+            author,
+            question,
+            pollType,
+            badPath,
+            unanswered = null
+        } = this.props
     }
 }
 
