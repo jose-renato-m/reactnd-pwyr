@@ -25,7 +25,7 @@ export class UserCard extends Component {
         } = this.props
 
         if (badPath === true) {
-            
+          <Redirect to='/questions/bad_id' />  
         }
     }
 }
