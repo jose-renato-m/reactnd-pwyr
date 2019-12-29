@@ -54,6 +54,9 @@ export class UserCard extends Component {
                         <Grid.Column width={11}>
                             <Image src={author.avatarURL} />
                         </Grid.Column>
+                        <Grid.Column width={11}>
+                            
+                        </Grid.Column>
                     </Grid.Row>
                 </Grid>
             </Segment.Group>
