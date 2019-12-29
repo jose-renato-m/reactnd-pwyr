@@ -13,6 +13,12 @@ import PollResult from './PollResult'
 import PollTeaser from './PollTeaser'
 import { colors } from '../utils/supports'
 
+const pollTypes = {
+    POLL_TEASER: 'POLL_TEASER',
+    POLL_QUESTION: 'POLL_QUESTION',
+    POLL_RESULT: 'POLL_RESULT',
+}
+
 export class UserCard extends Component {
     static propTypes = {
         question: PropTypes.object,
