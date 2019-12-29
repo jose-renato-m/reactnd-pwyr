@@ -39,7 +39,15 @@ export class UserCard extends Component {
 
         return (
             <Segment.Group>
-                
+                <Header
+                    as='h5'
+                    textAlign='left'
+                    block
+                    attached='top'
+                    style={{ borderTop: borderTop }}
+                >
+                    {author.name} asks:
+                </Header>
             </Segment.Group>
         )
     }
