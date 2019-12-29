@@ -38,7 +38,9 @@ export class UserCard extends Component {
         const borderTop = unanswered === null ? `1px solid ${colors.grey}` : `2px solid ${tabColor.hex}`
 
         return (
-
+            <Segment.Group>
+                
+            </Segment.Group>
         )
     }
 }
