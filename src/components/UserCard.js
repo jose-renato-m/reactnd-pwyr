@@ -27,6 +27,8 @@ export class UserCard extends Component {
         if (badPath === true) {
           <Redirect to='/questions/bad_id' />  
         }
+
+        const tabColor = unanswered === true ? colors.green : colors.blue
     }
 }
 
