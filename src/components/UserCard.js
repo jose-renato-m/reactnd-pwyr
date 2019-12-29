@@ -52,7 +52,7 @@ export class UserCard extends Component {
                 <Grid divided padded>
                     <Grid.Row>
                         <Grid.Column width={11}>
-                            
+                            <Image src={author.avatarURL} />
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
