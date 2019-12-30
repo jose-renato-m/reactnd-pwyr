@@ -89,4 +89,11 @@ export class UserCard extends Component {
     }
 }
 
+function mapStateToProps(
+    { users, questions, authedUser },
+    { match, question_id },
+) {
+
+}
+
 export default connect()(UserCard)
