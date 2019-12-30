@@ -65,7 +65,10 @@ export class NewPoll extends Component {
                         <p>Complete the question:</p>
                         <p>
                             <strong>Would you rather...</strong>
-                        </p>                        
+                        </p>
+                        <Form onSubmit={this.handleSubmit}>
+                            
+                        </Form>                   
                     </Grid.Column>
                 </Grid>
             </Segment.Group>
