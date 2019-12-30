@@ -31,6 +31,12 @@ const panes = props => {
                     ))}
                 </Tab.Pane>
             )
+        },
+        {
+            menuItem: 'Answered',
+            render: () => (
+                
+            )
         }
     ]
 }
