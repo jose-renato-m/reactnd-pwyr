@@ -45,8 +45,9 @@ export class NewPoll extends Component {
     })
     }
     render() {
+        const disabled = this.state.option1 === '' || this.state.option2 === ''
         return (
-            
+
         )
     }
 }
