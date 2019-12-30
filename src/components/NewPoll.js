@@ -52,7 +52,9 @@ export class NewPoll extends Component {
         }
         return (
             <Segment.Group>
-                
+                <Header as='h3' textAlign='left' block attached='top'>
+                    Create a New Poll
+                </Header>
             </Segment.Group>
         )
     }
