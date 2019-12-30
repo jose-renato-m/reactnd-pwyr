@@ -23,6 +23,17 @@ const PollContent = (props) => {
     const { pollType, question, unanswered } = props
 }
 
+switch (pollType) {
+    case pollTypes.POLL_TEASER:
+        return <PollTeaser question={question} unanswered={unanswered} />
+    case pollTypes.POLL_QUESTION:
+        return <PollQuestion question={question} />
+    case pollTypes.POLL_RESULT:
+        return <PollResult question={question} />
+    default:
+        return
+}
+
 export class UserCard extends Component {
     static propTypes = {
         question: PropTypes.object,
