@@ -57,6 +57,13 @@ function mapStateToProps({ authedUser, users, questions }) {
     const unanswered = Object.values(questions)
         .filter((question) => answeredIds.includes(question.id))
         .sort((a, b) => b.timestamp - a.timestamp)
+
+    return {
+        userQuestionData: {
+            answered,
+            unanswered,
+        }
+    }
 }
 
 export default connect()(Home)
