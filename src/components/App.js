@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import { handleInitialData } from '../actions/shared'
 import Login from './Login'
 import Nav from './Nav'
+import Home from './Home'
 
 class App extends Component {
   componentDidMount() {
