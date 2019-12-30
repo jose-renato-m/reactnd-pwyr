@@ -93,4 +93,10 @@ export class NewPoll extends Component {
     }
 }
 
+function mapStateToProps({ authedUser }) {
+    return {
+        authedUser,
+    }
+}
+
 export default connect()(NewPoll)
