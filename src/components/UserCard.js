@@ -34,8 +34,6 @@ const PollContent = (props) => {
     }
 }
 
-
-
 export class UserCard extends Component {
     static propTypes = {
         question: PropTypes.object,
