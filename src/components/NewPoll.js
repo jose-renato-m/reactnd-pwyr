@@ -99,4 +99,7 @@ function mapStateToProps({ authedUser }) {
     }
 }
 
-export default connect()(NewPoll)
+export default connect(
+    mapStateToProps,
+    { handleSaveQuestion }
+)(NewPoll)
