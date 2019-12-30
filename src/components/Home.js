@@ -66,4 +66,4 @@ function mapStateToProps({ authedUser, users, questions }) {
     }
 }
 
-export default connect()(Home)
+export default connect(mapStateToProps)(Home)
