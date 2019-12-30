@@ -26,6 +26,9 @@ export class NewPoll extends Component {
     handleChange = (e) => {
         this.setState({ [e.target.id]: e.target.value })
     } 
+    handleSubmit = (e) => {
+       e.preventDefault()
+    }
 }
 
 export default connect()(NewPoll)
