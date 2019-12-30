@@ -116,6 +116,13 @@ function mapStateToProps(
             }
         }
     }
+
+    return {
+        badPath,
+        question,
+        author,
+        pollType,
+    }
 }
 
 export default connect()(UserCard)
