@@ -93,7 +93,10 @@ function mapStateToProps(
     { users, questions, authedUser },
     { match, question_id },
 ) {
-
+    let question,
+        author,
+        pollType,
+        badPath = false
 }
 
 export default connect()(UserCard)
