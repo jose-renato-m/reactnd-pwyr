@@ -31,8 +31,9 @@ export class NewPoll extends Component {
        const { authedUser, handleSaveQuestion }  = this.props
        const { option1, option2 } = this.state
 
-    new Promise(() => {
-        
+    new Promise((res, rej) => {
+        this.setState({ isLoading: true })
+        handleSaveQuestion(option1, option2, authedUser)
     })
     }
 }
