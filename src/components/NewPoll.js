@@ -44,6 +44,11 @@ export class NewPoll extends Component {
         this.setState({ validSubmit: true })
     })
     }
+    render() {
+        return (
+            
+        )
+    }
 }
 
 export default connect()(NewPoll)
