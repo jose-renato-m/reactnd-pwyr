@@ -30,6 +30,10 @@ export class NewPoll extends Component {
        e.preventDefault()
        const { authedUser, handleSaveQuestion }  = this.props
        const { option1, option2 } = this.state
+
+    new Promise(() => {
+        
+    })
     }
 }
 
