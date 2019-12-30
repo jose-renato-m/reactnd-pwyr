@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Tab } from 'semantic-ui-react'
+import { UserCard } from './UserCard'
 
 export class Home extends Component {
     static propTypes = {
@@ -21,8 +22,12 @@ const panes = props => {
             menuItem: 'Unanswered',
             render: () => (
                 <Tab.Pane>
-                    {userQuestionData.answered.map(() => (
-                        
+                    {userQuestionData.answered.map((question) => (
+                        <UserCard
+                            key={question.id}
+                            question_id={question.id}
+                            unanswered={false}
+                         />
                     ))}
                 </Tab.Pane>
             )
