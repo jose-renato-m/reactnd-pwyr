@@ -49,4 +49,8 @@ const panes = props => {
     ]
 }
 
+function mapStateToProps({ authedUser, users, questions }) {
+
+}
+
 export default connect()(Home)
