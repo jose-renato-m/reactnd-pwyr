@@ -16,7 +16,13 @@ export class NewPoll extends Component {
     static propTypes = {
         authedUser: PropTypes.string.isRequired,
         handleSaveQuestion: PropTypes.func.isRequired,
-    }    
+    }
+    state = {
+        validSubmit: false,
+        isLoading: false,
+        option1: '',
+        option2: '',
+    }   
 }
 
 export default connect()(NewPoll)
