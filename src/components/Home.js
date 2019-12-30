@@ -35,7 +35,9 @@ const panes = props => {
         {
             menuItem: 'Answered',
             render: () => (
-                
+               <Tab.Pane>
+                   
+               </Tab.Pane>
             )
         }
     ]
