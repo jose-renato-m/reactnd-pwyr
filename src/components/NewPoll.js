@@ -74,6 +74,7 @@ export class NewPoll extends Component {
                                 onChange={this.handleChange}
                                 required
                              />
+                            <Divider horizontal>Or</Divider>
                         </Form>                   
                     </Grid.Column>
                 </Grid>
