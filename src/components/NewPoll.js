@@ -22,7 +22,10 @@ export class NewPoll extends Component {
         isLoading: false,
         option1: '',
         option2: '',
-    }   
+    }
+    handleChange = () => {
+        this.setState({ [e.target.id]: e.target.value })
+    } 
 }
 
 export default connect()(NewPoll)
