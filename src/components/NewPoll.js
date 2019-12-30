@@ -57,7 +57,11 @@ export class NewPoll extends Component {
                 </Header>
                 <Grid padded>
                     <Grid.Column>
-                        
+                        {this.state.isLoading && (
+                            <Dimmer active inverted>
+                                
+                            </Dimmer>
+                        )}
                     </Grid.Column>
                 </Grid>
             </Segment.Group>
