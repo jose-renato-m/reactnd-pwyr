@@ -30,7 +30,7 @@ class App extends Component {
               <Nav />
               <ContentGrid>
                 <Switch>
-
+                  <Route exact path='/' component={Home} />
                 </Switch>
               </ContentGrid>
             </Fragment>
