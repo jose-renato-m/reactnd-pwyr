@@ -67,7 +67,13 @@ export class NewPoll extends Component {
                             <strong>Would you rather...</strong>
                         </p>
                         <Form onSubmit={this.handleSubmit}>
-                            
+                            <Form.Input
+                                id='option1'
+                                placeholder='Enter option one...'
+                                value={this.state.option1}
+                                onChange={this.handleChange}
+                                required
+                             />
                         </Form>                   
                     </Grid.Column>
                 </Grid>
