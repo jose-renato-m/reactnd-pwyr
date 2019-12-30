@@ -50,7 +50,13 @@ const panes = props => {
 }
 
 function mapStateToProps({ authedUser, users, questions }) {
-
+    const answeredIds = Object.keys(users[authedUser].answers)
+    const answered = Object.values(questions)
+        .filter((question) => !answeredIds.includes(question.id))
+        .sort((a, b) => b.timestamp - a.timestamp)
+    const unanswered = Object.values(questions)
+        .filter((question) => answeredIds.includes(question.id))
+        .sort((a, b) => b.timestamp - a.timestamp)
 }
 
 export default connect()(Home)
