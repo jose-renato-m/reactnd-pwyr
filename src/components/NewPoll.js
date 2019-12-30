@@ -55,6 +55,11 @@ export class NewPoll extends Component {
                 <Header as='h3' textAlign='left' block attached='top'>
                     Create a New Poll
                 </Header>
+                <Grid padded>
+                    <Grid.Column>
+                        
+                    </Grid.Column>
+                </Grid>
             </Segment.Group>
         )
     }
