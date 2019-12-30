@@ -23,7 +23,7 @@ export class NewPoll extends Component {
         option1: '',
         option2: '',
     }
-    handleChange = () => {
+    handleChange = (e) => {
         this.setState({ [e.target.id]: e.target.value })
     } 
 }
