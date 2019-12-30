@@ -104,7 +104,17 @@ function mapStateToProps(
     } else {
         const { question_id } = match.params
         question = questions[question_id]
-        const user = users[authedUser] 
+        const user = users[authedUser]
+
+        if (question === undefined) {
+            badPath = true
+        } else {
+            author = users[question.author]
+            pollType = pollTypes.POLL_QUESTION
+            if (Object.keys(user.answers).includes(question.id)) {
+                pollType = pollTypes.POLL_RESULT
+            }
+        }
     }
 }
 
