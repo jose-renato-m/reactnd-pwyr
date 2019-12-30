@@ -125,4 +125,4 @@ function mapStateToProps(
     }
 }
 
-export default connect()(UserCard)
+export default connect(mapStateToProps)(UserCard)
