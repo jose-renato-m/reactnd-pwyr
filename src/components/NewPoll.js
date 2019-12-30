@@ -75,6 +75,13 @@ export class NewPoll extends Component {
                                 required
                              />
                             <Divider horizontal>Or</Divider>
+                            <Form.Input
+                                id='option2'
+                                placeholder='Enter option two...'
+                                value={this.state.option2}
+                                onChange={this.handleChange}
+                                required
+                             />
                         </Form>                   
                     </Grid.Column>
                 </Grid>
