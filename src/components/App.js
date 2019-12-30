@@ -31,6 +31,7 @@ class App extends Component {
               <ContentGrid>
                 <Switch>
                   <Route exact path='/' component={Home} />
+                  <Route path='/questions/:question_id' component={UserCard} />
                 </Switch>
               </ContentGrid>
             </Fragment>
