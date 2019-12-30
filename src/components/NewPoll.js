@@ -61,7 +61,11 @@ export class NewPoll extends Component {
                             <Dimmer active inverted>
                                 <Loader content='Updating' />
                             </Dimmer>
-                        )}                        
+                        )}
+                        <p>Complete the question:</p>
+                        <p>
+                            <strong>Would you rather...</strong>
+                        </p>                        
                     </Grid.Column>
                 </Grid>
             </Segment.Group>
