@@ -26,7 +26,7 @@ const panes = props => {
                         <UserCard
                             key={question.id}
                             question_id={question.id}
-                            unanswered={false}
+                            unanswered={true}
                          />
                     ))}
                 </Tab.Pane>
