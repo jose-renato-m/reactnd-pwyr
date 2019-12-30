@@ -34,6 +34,13 @@ export class NewPoll extends Component {
     new Promise((res, rej) => {
         this.setState({ isLoading: true })
         handleSaveQuestion(option1, option2, authedUser)
+        setTimeout(() => res('success'), 1000)
+    }).then(() => {
+        this.setState({
+            option1: '',
+            option2: '',
+        })
+        this.setState({ validSubmit: true })
     })
     }
 }
