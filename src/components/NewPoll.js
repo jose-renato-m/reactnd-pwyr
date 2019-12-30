@@ -51,7 +51,9 @@ export class NewPoll extends Component {
             return <Redirect to='/' />
         }
         return (
-
+            <Segment.Group>
+                
+            </Segment.Group>
         )
     }
 }
