@@ -97,6 +97,15 @@ function mapStateToProps(
         author,
         pollType,
         badPath = false
+    if (question_id !== undefined) {
+        question = questions[question_id]
+        author = users[question.author]
+        pollType = pollTypes.POLL_TEASER
+    } else {
+        const { question_id } = match.params
+        question = questions[question_id]
+        const user = users[authedUser] 
+    }
 }
 
 export default connect()(UserCard)
