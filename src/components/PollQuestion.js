@@ -72,6 +72,7 @@ export class PollQuestion extends Component {
 
 function mapStateToProps({ authedUser }, { match }) {
     const { question_id } = match.params
+    // eslint-disable-next-line
     const questions = questions[question_id]
 
     return {
