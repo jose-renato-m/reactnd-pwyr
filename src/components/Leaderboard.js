@@ -7,8 +7,10 @@ export class Leaderboard extends Component {
         leaderboardData: PropType.array.isRequired
     }
     render() {
+        const { leaderboardData } = this.props
+        
         return (
-            
+
         )
     }
 }
