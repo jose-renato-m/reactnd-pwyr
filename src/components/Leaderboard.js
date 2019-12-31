@@ -23,7 +23,7 @@ export class Leaderboard extends Component {
             <Fragment>
                 {leaderboardData.map((user, idx) => (
                     <Segment.Group key={user.id}>
-                        
+                        <Label corner='left' icon='trophy' color={trophyColor[idx]} />
                     </Segment.Group>
                 ))}
             </Fragment>
