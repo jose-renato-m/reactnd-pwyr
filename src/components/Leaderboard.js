@@ -46,6 +46,9 @@ export class Leaderboard extends Component {
                                 <Grid.Column width={4} textAlign='center'>
                                     <Segment.Group>
                                         <Header as='h5' block attached='top' content='Score' />
+                                        <Segment>
+                                            
+                                        </Segment>
                                     </Segment.Group>
                                 </Grid.Column>
                             </Grid.Row>
