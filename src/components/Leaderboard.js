@@ -63,7 +63,7 @@ export class Leaderboard extends Component {
 }
 
 function mapStateToProps({ users }) {
-
+    const leaderboardData = Object.values(users)
 }
 
 export default connect()(Leaderboard)
