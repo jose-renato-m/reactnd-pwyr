@@ -10,6 +10,8 @@ import {
     Divider,
 } from 'semantic-ui-react'
 
+const trophyColor = ['yellow', 'grey', 'orange']
+
 export class Leaderboard extends Component {
     static propType = {
         leaderboardData: PropType.array.isRequired
