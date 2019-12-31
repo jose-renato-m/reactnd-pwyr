@@ -19,7 +19,9 @@ export class Leaderboard extends Component {
 
         return (
             <Fragment>
-                
+                {leaderboardData.map(() => (
+                    
+                ))}
             </Fragment>
         )
     }
