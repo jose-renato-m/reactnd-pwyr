@@ -21,8 +21,10 @@ export class Leaderboard extends Component {
 
         return (
             <Fragment>
-                {leaderboardData.map(() => (
-                    
+                {leaderboardData.map((user, idx) => (
+                    <Segment.Group key={user.id}>
+                        
+                    </Segment.Group>
                 ))}
             </Fragment>
         )
