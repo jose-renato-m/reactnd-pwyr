@@ -29,6 +29,9 @@ export class Leaderboard extends Component {
                                 <Grid.Column width={4} verticalAlign='middle'>
                                     <Image src={user.avatarURL} />
                                 </Grid.Column>
+                                <Grid.Column width={8}>
+                                    
+                                </Grid.Column>
                             </Grid.Row>
                         </Grid>
                     </Segment.Group>
