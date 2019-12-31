@@ -18,7 +18,9 @@ export class Leaderboard extends Component {
         const { leaderboardData } = this.props
 
         return (
-
+            <Fragment>
+                
+            </Fragment>
         )
     }
 }
