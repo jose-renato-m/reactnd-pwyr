@@ -41,10 +41,10 @@ export class PollResult extends Component {
         const userVotes = user.answers[question.id]
 
         let option1 = styles.secondary,
-            option2 = styles.secondary,
+            option2 = styles.secondary
         if (optionOneVotes > optionTwoVotes) {
             option1 = styles.primary
-        } else (optionTwoVotes > optionOneVotes) {
+        } else if (optionTwoVotes > optionOneVotes) {
             option2 = styles.primary
         }
 
