@@ -1,4 +1,4 @@
-import { LOAD_QUESTIONS
+import { LOAD_QUESTIONS,
          ADD_ANSWER_TO_QUESTION,
          ADD_QUESTION,
 } from '../actions/questions'
@@ -22,6 +22,11 @@ export default function questions (state = {}, action) {
                         votes: state[qid][answer].votes.concat(authedUser)
                     }
                 }
+            }
+        case ADD_QUESTION:
+
+            return {
+                
             }
         default:
             return state
