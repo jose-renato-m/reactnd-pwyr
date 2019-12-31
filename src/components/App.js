@@ -8,6 +8,7 @@ import Nav from './Nav'
 import Home from './Home'
 import UserCard from './UserCard'
 import NewPoll from './NewPoll'
+import Leaderboard from './Leaderboard'
 
 class App extends Component {
   componentDidMount() {
