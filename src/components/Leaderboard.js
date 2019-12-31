@@ -43,6 +43,11 @@ export class Leaderboard extends Component {
                                         <Grid.Column width={4}>{user.questionCount}</Grid.Column>
                                     </Grid>
                                 </Grid.Column>
+                                <Grid.Column width={4} textAlign='center'>
+                                    <Segment.Group>
+                                        
+                                    </Segment.Group>
+                                </Grid.Column>
                             </Grid.Row>
                         </Grid>
                     </Segment.Group>
