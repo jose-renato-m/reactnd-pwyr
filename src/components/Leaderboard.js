@@ -47,7 +47,9 @@ export class Leaderboard extends Component {
                                     <Segment.Group>
                                         <Header as='h5' block attached='top' content='Score' />
                                         <Segment>
-                                            
+                                            <Label circular color='green' size='big'>
+                                                {user.questionCount + user.answerCount}
+                                            </Label>
                                         </Segment>
                                     </Segment.Group>
                                 </Grid.Column>
