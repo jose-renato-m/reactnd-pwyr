@@ -73,6 +73,7 @@ function mapStateToProps({ users }) {
             total: Object.values(user.answers).length + user.questions.length
         }))
         .sort((a, b) => a.total - b.total)
+        .reverse()
 }
 
 export default connect()(Leaderboard)
