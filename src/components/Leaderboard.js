@@ -30,7 +30,9 @@ export class Leaderboard extends Component {
                                     <Image src={user.avatarURL} />
                                 </Grid.Column>
                                 <Grid.Column width={8}>
-                                    
+                                    <Header as='h3' textAlign='left'>
+                                        {user.name}
+                                    </Header>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
