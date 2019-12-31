@@ -1,6 +1,7 @@
-import { LOAD_QUESTIONS,
-         ADD_ANSWER_TO_QUESTION,
-         ADD_QUESTION,
+import { 
+    LOAD_QUESTIONS,
+    ADD_ANSWER_TO_QUESTION,
+    ADD_QUESTION,
 } from '../actions/questions'
 
 export default function questions (state = {}, action) {
