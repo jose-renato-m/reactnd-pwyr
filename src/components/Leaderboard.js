@@ -37,6 +37,7 @@ export class Leaderboard extends Component {
                                         <Grid.Column width={12}>Answered questions</Grid.Column>
                                         <Grid.Column width={4}>{user.answerCount}</Grid.Column>
                                     </Grid>
+                                    <Divider />
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
