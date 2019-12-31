@@ -6,6 +6,11 @@ export class Leaderboard extends Component {
     static propType = {
         leaderboardData: PropType.array.isRequired
     }
+    render() {
+        return (
+            
+        )
+    }
 }
 
 export default connect()(Leaderboard)
