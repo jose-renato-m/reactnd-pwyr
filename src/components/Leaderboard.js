@@ -33,6 +33,10 @@ export class Leaderboard extends Component {
                                     <Header as='h3' textAlign='left'>
                                         {user.name}
                                     </Header>
+                                    <Grid>
+                                        <Grid.Column width={12}>Answered questions</Grid.Column>
+                                        <Grid.Column width={4}>{user.answerCount}</Grid.Column>
+                                    </Grid>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
