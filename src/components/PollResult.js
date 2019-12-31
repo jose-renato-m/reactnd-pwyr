@@ -75,7 +75,8 @@ export class PollResult extends Component {
                     style={{ backgroundColor: `${option2.bgColor}` }}
                 >
                     {userVote === 'optionTwo' && <yourVoteLabel />}
-                    <p style={{ fontWeight: 'bold' }}>{question.optionTwo.text</p>
+
+                    <p style={{ fontWeight: 'bold' }}>{question.optionTwo.text}</p>
                     <Progress
                         percent={((optionTwoVotes / votesTotal) * 100).toFixed(2)}
                         progress
