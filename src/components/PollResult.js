@@ -38,7 +38,7 @@ export class PollResult extends Component {
         const optionOneVotes = question.optionOne.votes.length
         const optionTwoVotes = question.optionTwo.votes.length
         const votesTotal = optionOneVotes + optionTwoVotes
-        const userVotes = user.answers[question.id]
+        const userVote = user.answers[question.id]
 
         let option1 = styles.secondary,
             option2 = styles.secondary
