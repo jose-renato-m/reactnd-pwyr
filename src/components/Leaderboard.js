@@ -62,4 +62,8 @@ export class Leaderboard extends Component {
     }
 }
 
+function mapStateToProps({ users }) {
+
+}
+
 export default connect()(Leaderboard)
