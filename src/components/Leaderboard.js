@@ -64,8 +64,13 @@ export class Leaderboard extends Component {
 
 function mapStateToProps({ users }) {
     const leaderboardData = Object.values(users)
-        .map(() => ({
-            
+        .map((user) => ({
+            id: user.id,
+            name: user.name,
+            avatarURL: user.avatarURL,
+            answerCount: Object.values(user.answers).length,
+            questionCount: user.questions.length,
+            total: Object.values(user.answers).length + user.questions.length
         }))
 }
 
