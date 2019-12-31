@@ -74,6 +74,7 @@ function mapStateToProps({ users }) {
         }))
         .sort((a, b) => a.total - b.total)
         .reverse()
+        .slice()
 }
 
 export default connect()(Leaderboard)
