@@ -24,9 +24,10 @@ export default function questions (state = {}, action) {
                 }
             }
         case ADD_QUESTION:
-
+            const { question } = action
+            
             return {
-                
+
             }
         default:
             return state
