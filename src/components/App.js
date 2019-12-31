@@ -57,9 +57,9 @@ const ContentGrid = ({ children }) => (
   </Grid>
 )
 
-function mapStateToProps() {
+function mapStateToProps({ authedUser }) {
   return {
-    
+    authedUser
   }
 }
 
