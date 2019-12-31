@@ -72,6 +72,7 @@ function mapStateToProps({ users }) {
             questionCount: user.questions.length,
             total: Object.values(user.answers).length + user.questions.length
         }))
+        .sort(() => )
 }
 
 export default connect()(Leaderboard)
