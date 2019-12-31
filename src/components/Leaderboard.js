@@ -80,4 +80,4 @@ function mapStateToProps({ users }) {
     }
 }
 
-export default connect()(Leaderboard)
+export default connect(mapStateToProps)(Leaderboard)
