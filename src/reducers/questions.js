@@ -11,9 +11,10 @@ export default function questions (state = {}, action) {
                 ...action.questions
             }
         case ADD_ANSWER_TO_QUESTION:
-
+            const { authedUser, qid, answer } = action
+            
             return {
-                
+
             }
         default:
             return state
