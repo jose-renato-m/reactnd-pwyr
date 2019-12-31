@@ -57,4 +57,10 @@ const ContentGrid = ({ children }) => (
   </Grid>
 )
 
+function mapStateToProps() {
+  return {
+    
+  }
+}
+
 export default connect()(App)
