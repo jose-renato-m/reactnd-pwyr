@@ -10,6 +10,11 @@ export default function questions (state = {}, action) {
                 ...state,
                 ...action.questions
             }
+        case ADD_ANSWER_TO_QUESTION:
+
+            return {
+                
+            }
         default:
             return state
     }
