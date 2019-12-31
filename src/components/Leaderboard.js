@@ -64,6 +64,9 @@ export class Leaderboard extends Component {
 
 function mapStateToProps({ users }) {
     const leaderboardData = Object.values(users)
+        .map(() => ({
+            
+        }))
 }
 
 export default connect()(Leaderboard)
