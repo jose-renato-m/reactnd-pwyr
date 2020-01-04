@@ -9,7 +9,7 @@ import Home from './Home'
 import UserCard from './UserCard'
 import NewPoll from './NewPoll'
 import Leaderboard from './Leaderboard'
-import NoMatch from './NoMatch';
+import NoMatch from './NoMatch'
 
 class App extends Component {
   componentDidMount() {
