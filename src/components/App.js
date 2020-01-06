@@ -13,7 +13,7 @@ import NoMatch from './NoMatch'
 
 class App extends Component {
   componentDidMount() {
-    this.props.dispatch(handleInitialData())
+    this.props.handleInitialData()
   }
   render() {
     const { authedUser } = this.props
