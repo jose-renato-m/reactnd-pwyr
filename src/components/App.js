@@ -16,11 +16,11 @@ class App extends Component {
     this.props.dispatch(handleInitialData())
   }
   render() {
-    const { authUser } = this.props
+    const { authedUser } = this.props
     return (
       <Router>
         <div className='App'>
-          {authUser === null ? (
+          {authedUser === null ? (
             <Route
               render={() => (
                 <ContentGrid>
