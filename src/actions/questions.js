@@ -22,6 +22,12 @@ function answerQuestion({ authedUser, qid, answer }) {
     }
 }
 
+export function handleAnswerQuestion({ }) {
+    return () => {
+
+    }
+}
+
 function addQuestion(question) {
     return {
         type: ADD_QUESTION,
