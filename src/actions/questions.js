@@ -41,7 +41,7 @@ function addQuestion({ question }) {
     }
 }
 
-export function handleSaveQuestion(optionOneText, optionTwoText, author) {
+export function handleAddQuestion(optionOneText, optionTwoText, author) {
     return (dispatch) => {
         return saveQuestion({ optionOneText, optionTwoText, author }).then(
             (question) => {
