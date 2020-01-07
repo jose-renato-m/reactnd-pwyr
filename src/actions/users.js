@@ -9,6 +9,12 @@ export function loadUsers (users) {
     }
 }
 
+export function userAddedQuestion({ authedUser, qid }) {
+    return {
+
+    }
+}
+
 export function handleSaveQuestionAnswer(authedUser, qid, answer) {
     return (dispatch) => {
         dispatch(addAnswerToUser(authedUser, qid, answer))
