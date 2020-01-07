@@ -13,9 +13,9 @@ export function loadQuestions (questions) {
     }
 }
 
-export function addAnswerToQuestion(authedUser, qid, answer) {
+function answerQuestion({ authedUser, qid, answer }) {
     return {
-        type: ADD_ANSWER_TO_QUESTION,
+        type: ANSWER_QUESTION,
         authedUser,
         qid,
         answer,
