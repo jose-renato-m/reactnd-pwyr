@@ -1,5 +1,6 @@
 import { saveQuestionAnswer, saveQuestion } from '../utils/api'
 import { userAddedQuestion, userAnsweredQuestion } from './users'
+import { showLoading, hideLoading } from 'react-redux-loading-bar'
 
 export const LOAD_QUESTIONS = 'LOAD_QUESTIONS'
 export const ADD_ANSWER_TO_QUESTION = 'ADD_ANSWER_TO_QUESTION'
