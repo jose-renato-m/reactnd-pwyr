@@ -13,7 +13,7 @@ export class PollQuestion extends Component {
     static propTypes = {
         authedUser: PropTypes.string.isRequired,
         handleSaveQuestionAnswer: PropTypes.func.isRequired,
-        question: PropTypes.object.isRequired,   
+        question: PropTypes.object.isRequired, 
     }
     state = {
         value: ''
