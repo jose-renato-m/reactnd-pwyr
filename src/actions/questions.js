@@ -22,9 +22,15 @@ function answerQuestion({ authedUser, qid, answer }) {
     }
 }
 
-export function handleAnswerQuestion({ }) {
-    return () => {
+export function handleAnswerQuestion({ authedUser, qid, answer }) {
+    return (dispatch) => {
+        dispatch(showLoading())
 
+        return saveQuestionAnswer({ authedUser, qid, answer }).then(() =>{
+            dispatch(answerQuestion({ authedUser, qid, answer }))
+            dispatch(userAnsweredQuestion({ authedUser, qid, answer }))
+            dispatch(hideLoading())
+        })
     }
 }
 
