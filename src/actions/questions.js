@@ -43,10 +43,13 @@ function addQuestion({ question }) {
 
 export function handleAddQuestion(optionOneText, optionTwoText, author) {
     return (dispatch) => {
+        dispatch(showLoading())
+
         return saveQuestion({ optionOneText, optionTwoText, author }).then(
             (question) => {
-                dispatch(addQuestion(question))
-                dispatch(addQuestionToUser(question))
+                dispatch(userAddedQuestion({ authedUser: author, qid: question.id }))
+                dispatch(addQuestion({ question }))
+                dispatch(hideLoading())
             }   
         )
     }
