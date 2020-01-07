@@ -34,7 +34,7 @@ export function handleAnswerQuestion({ authedUser, qid, answer }) {
     }
 }
 
-function addQuestion(question) {
+function addQuestion({ question }) {
     return {
         type: ADD_QUESTION,
         question,
