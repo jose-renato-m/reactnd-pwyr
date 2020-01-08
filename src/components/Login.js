@@ -86,7 +86,13 @@ class Login extends Component {
                     <form className='ui large form'>
                         <div className='ui raised segment'>
                             <div className='field'>
-                                
+                               <Dropdown
+                                placeholder='Select a User'
+                                fluid
+                                selection
+                                options={userOptions}
+                                onChange={this.handleUserSelection}
+                             />
                             </div>
                         </div>
                     </form>
