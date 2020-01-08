@@ -52,7 +52,7 @@ class Leaderboard extends Component {
         })
         return (
             <Card key={uid}>
-                
+                <Image src={user.avatarURL} label={label} />
             </Card>
         )
     }    
