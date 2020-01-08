@@ -50,6 +50,12 @@ class QuestionList extends Component {
                   ]
                 : [cards.length]
     }
+
+    render() {
+        return (
+            
+        )
+    }
 }
 
 export default connect()(QuestionList)
