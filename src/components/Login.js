@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import { Dropdown, Image, Message } from 'semantic-ui-react'
+import PropTypes from 'prop-types'
+
 import {
     Segment,
     Grid,
