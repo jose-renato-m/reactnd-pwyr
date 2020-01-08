@@ -63,7 +63,15 @@ class Leaderboard extends Component {
                         </Label>
                     </Card.Meta>
                     <Card.Description>
-                        
+                        <Grid columns={2} divided style={{ fontSize: '1rem' }}>
+                            <Grid.Row>
+                                <Grid.Column floated='left' width={11}>
+                                    Answered: {answeredQuestions}
+                                    <br />
+                                    Created: {createdQuestions}
+                                </Grid.Column>
+                            </Grid.Row>
+                        </Grid>
                     </Card.Description>
                 </Card.Content>
             </Card>
