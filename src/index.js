@@ -9,7 +9,10 @@ import thunk from 'redux-thunk'
 import App from './components/App'
 
 const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose
-const store = createStore(reducer, middleWare)
+const store = createStore(
+    reducer, 
+    composeEnhancers(applyMiddleware(thunk, loadingBarMiddleware()))
+)
 
 ReactDOM.render(
     <Provider store={store}>
