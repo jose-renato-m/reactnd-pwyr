@@ -54,6 +54,12 @@ class Login extends Component {
             return
         }
         
+        const userOptions = Object.keys(users).map((userID) => ({
+            key: userID,
+            value: userID,
+            text: users[userID].name,
+            image: { avatar: true, src: users[userID].avatarURL }
+        }))
     }
 }
 
