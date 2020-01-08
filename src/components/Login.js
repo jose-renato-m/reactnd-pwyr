@@ -41,6 +41,11 @@ class Login extends Component {
                 }
             })
         }
+
+        this.props.setAuthedUser(this.state.selectedUser)
+        if (this.referrer === '/logout' || this.referrer === '/login') {
+            history.push(this.referrer)
+        }
     }
 
     render() {
