@@ -72,6 +72,12 @@ class QuestionList extends Component {
                 questions[qid].optionTwo.votes.includes(authedUser)
         )
 
+        const panes = [
+            {
+               
+            }
+        ]
+
         return (
 
         )
