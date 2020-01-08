@@ -8,8 +8,8 @@ import {
 } from 'semantic-ui-react'
 
 class Leaderboard extends Component {
-    static propType = {
-        leaderboardData: PropType.array.isRequired
+    cardItemsPerRow = 3
+    
     }
     render() {
         const { leaderboardData } = this.props
