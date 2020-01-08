@@ -48,12 +48,11 @@ class Leaderboard extends Component {
             }
             const answeredQuestions = Object.keys(user.answers).length
             const createdQuestions = user.questions.length
-            const score = answeredQuestions + createdQuestions
-
-            return (
-
-            )
+            const score = answeredQuestions + createdQuestions            
         })
+        return (
+            
+        )
     }    
 }
 
