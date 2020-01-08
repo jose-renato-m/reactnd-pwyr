@@ -74,7 +74,20 @@ class QuestionList extends Component {
 
         const panes = [
             {
-               
+                menuItem: (
+                    <Menu.Item key='unanswered-questions'>
+            Unanswered Questions<Label>{unansweredQuestionsCount}</Label>
+                    </Menu.Item>
+                ),
+                render: () => <Tab.Pane>{unansweredQuestionsContent}</Tab.Pane>
+            },
+            {
+                menuItem: (
+                    <Menu.Item key='answered-questions'>
+                        Answered Questions<Label>{answeredQuestionsCount}</Label>
+                    </Menu.Item>
+                ),
+                render: () => <Tab.Pane>{answeredQuestionsContent}</Tab.Pane>
             }
         ]
 
