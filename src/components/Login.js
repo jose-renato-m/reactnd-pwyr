@@ -60,6 +60,12 @@ class Login extends Component {
             text: users[userID].name,
             image: { avatar: true, src: users[userID].avatarURL }
         }))
+
+        const { message } = this.state
+
+        return (
+            
+        )
     }
 }
 
