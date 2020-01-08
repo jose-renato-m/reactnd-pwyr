@@ -70,6 +70,9 @@ class Leaderboard extends Component {
                                     <br />
                                     Created: {createdQuestions}
                                 </Grid.Column>
+                                <Grid.Column floated='right' width={5}>
+                                    
+                                </Grid.Column>
                             </Grid.Row>
                         </Grid>
                     </Card.Description>
