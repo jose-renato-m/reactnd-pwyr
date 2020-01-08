@@ -49,6 +49,10 @@ class Login extends Component {
     }
 
     render() {
+        const { users } = this.props
+        if (!users) {
+            return
+        }
         return (
             <Fragment>
                 <Segment.Group>
