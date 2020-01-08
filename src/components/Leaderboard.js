@@ -12,6 +12,10 @@ class Leaderboard extends Component {
 
     render() {
         const { users } = this.props
+
+        const awardColors = ['red', 'orange', 'yellow']
+        let rank = 0
+        let rankSuffix = ['st', 'nd', 'rd']
     }
     
     }
