@@ -105,4 +105,8 @@ class QuestionList extends Component {
     }
 }
 
+const sortQuestionsByTimeStamp = (questions) => {
+
+}
+
 export default connect()(QuestionList)
