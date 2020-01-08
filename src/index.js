@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { createStore, applyMiddleware, compose } from 'redux'
-import App from './components/App'
-import './index.css'
-
+import { loadingBarMiddleware } from 'react-redux-loading-bar'
 import { Provider } from 'react-redux'
 import reducer from './reducers/index'
+import thunk from 'redux-thunk'
+
+import App from './components/App'
+
 import middleWare from './middleware'
 
 const store = createStore(reducer, middleWare)
