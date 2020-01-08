@@ -19,7 +19,11 @@ class Leaderboard extends Component {
 
         const usersWithScore = {}
         Object.keys(users).forEach((uid) =>{
-            
+            const user = users[uid]
+            const answeredQuestions = Object.keys(user.answers).length
+            const createdQuestions = user.questions.length
+            user.score = answeredQuestions + createdQuestions
+            usersWithScore[user.id] = user
         })
     }
     
