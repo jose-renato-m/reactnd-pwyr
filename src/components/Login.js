@@ -1,17 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Dropdown, Image, Message } from 'semantic-ui-react'
-import PropTypes from 'prop-types'
-
-import {
-    Segment,
-    Grid,
-    Header,
-    Image,
-    Form,
-    Loader,
-    Dimmer,
-} from 'semantic-ui-react'
 import { setAuthedUser } from '../actions/authedUser'
 
 export class Login extends Component {
