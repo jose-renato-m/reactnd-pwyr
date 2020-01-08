@@ -71,7 +71,7 @@ class Login extends Component {
                         src='/would-you-rather.png'  
                         style={{
                             position: 'absolute',
-                            zIndex: '100'
+                            zIndex: '100',
                             top: '15px',
                             left: '30px',
                             width: '85px'
