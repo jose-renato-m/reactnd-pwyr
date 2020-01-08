@@ -3,9 +3,10 @@ import { connect } from 'react-redux'
 import { Dropdown, Image, Message } from 'semantic-ui-react'
 import { setAuthedUser } from '../actions/authedUser'
 
-export class Login extends Component {
+class Login extends Component {
     state = {
-        loading: false
+        selectedUser: null,
+        message: { hidden: true, content: ''}
     }
     handleLoading = () => {
         this.setState({ loading: true })
