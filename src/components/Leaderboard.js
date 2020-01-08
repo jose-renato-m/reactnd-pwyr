@@ -91,22 +91,8 @@ class Leaderboard extends Component {
     }    
 }
 
-function mapStateToProps({ users }) {
-    const leaderboardData = Object.values(users)
-        .map((user) => ({
-            id: user.id,
-            name: user.name,
-            avatarURL: user.avatarURL,
-            answerCount: Object.values(user.answers).length,
-            questionCount: user.questions.length,
-            total: Object.values(user.answers).length + user.questions.length
-        }))
-        .sort((a, b) => a.total - b.total)
-        .reverse()
-        .slice(0, 3)
-    return {
-        leaderboardData
-    }
+const mapStateToProps = (state) => {
+    return { users: state.users }
 }
 
 export default connect(mapStateToProps)(Leaderboard)
