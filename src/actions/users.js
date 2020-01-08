@@ -19,7 +19,10 @@ export function userAddedQuestion({ authedUser, qid }) {
 
 export function userAnsweredQuestion({ authedUser, qid, answer }) {
     return {
-        
+        type: USER_ANSWERED_QUESTION,
+        answer,
+        qid,
+        authedUser,
     }
 }
 
