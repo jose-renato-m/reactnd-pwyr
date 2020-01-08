@@ -1,6 +1,6 @@
 import { 
     LOAD_QUESTIONS,
-    ADD_ANSWER_TO_QUESTION,
+    ANSWER_QUESTION,
     ADD_QUESTION,
 } from '../actions/questions'
 
