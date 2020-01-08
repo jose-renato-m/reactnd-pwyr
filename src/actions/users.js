@@ -25,22 +25,3 @@ export function userAnsweredQuestion({ authedUser, qid, answer }) {
         authedUser,
     }
 }
-
-export function handleSaveQuestionAnswer(authedUser, qid, answer) {
-    return (dispatch) => {
-        dispatch(addAnswerToUser(authedUser, qid, answer))
-        dispatch(addAnswerToQuestion(authedUser, qid, answer))
-
-        return saveQuestionAnswer(authedUser, qid, answer).catch((e) => {
-            console.warn('Error in handleSaveQuestionAnswer: ', e)
-        })
-    }
-}
-
-export function addQuestionToUser({ id, author }) {
-    return {
-        type: ADD_QUESTION_TO_USER,
-        id,
-        author,
-    }
-}
