@@ -62,6 +62,9 @@ class Leaderboard extends Component {
                             {rankSuffix.shift() || 'th'}
                         </Label>
                     </Card.Meta>
+                    <Card.Description>
+                        
+                    </Card.Description>
                 </Card.Content>
             </Card>
         )
