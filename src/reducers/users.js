@@ -1,7 +1,7 @@
 import { 
     LOAD_USERS,
     USER_ADDED_QUESTION,
-    USER_ASWERED_QUESTION,
+    USER_ANSWERED_QUESTION,
 } from '../actions/users'
 
 export default function users (state = {}, action) {
@@ -18,8 +18,19 @@ export default function users (state = {}, action) {
                     ...state[action.authedUser],
                     questions: [...state[action.authedUser].questions,
                     action.qid]                        
-                    }
                 }
+            }
+        case USER_ANSWERED_QUESTION:
+            return {
+                ...state,
+                [action.authedUser]: {
+                    ...state[action.authedUser],
+                    answers: {
+                        ...state[action.authedUser].answers,
+                        [action.qid]: action.answer
+                    }                    
+                }
+            }
             }
         case ADD_QUESTION_TO_USER:
             const { id, author } = action
