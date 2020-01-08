@@ -9,6 +9,10 @@ import {
 
 class Leaderboard extends Component {
     cardItemsPerRow = 3
+
+    render() {
+        const { users } = this.props
+    }
     
     }
     render() {
