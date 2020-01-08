@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import {
     Button,
     Card,
@@ -31,7 +32,7 @@ class QuestionList extends Component {
                         </Card.Content>
                         <Card.Content extra>
                             <div className='ui two buttons'>
-                                
+
                             </div>
                         </Card.Content>
                     </Card>
