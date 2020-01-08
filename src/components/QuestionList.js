@@ -52,8 +52,10 @@ class QuestionList extends Component {
     }
 
     render() {
+        const { questions, authedUser, activeIndex, handleTabChange } = this.props
+
         return (
-            
+
         )
     }
 }
