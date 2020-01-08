@@ -23,7 +23,7 @@ class Leaderboard extends Component {
             const answeredQuestions = Object.keys(user.answers).length
             const createdQuestions = user.questions.length
             user.score = answeredQuestions + createdQuestions
-            usersWithScore[user.id] = user
+            usersWithScore[uid] = user
         })
     }
     
