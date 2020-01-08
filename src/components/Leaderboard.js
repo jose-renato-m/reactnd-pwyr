@@ -74,6 +74,9 @@ class Leaderboard extends Component {
                                     <div>
                                         <strong>score</strong>
                                     </div>
+                                    <Label circular color={awardColor} size='large'>
+                                        {score}
+                                    </Label>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
