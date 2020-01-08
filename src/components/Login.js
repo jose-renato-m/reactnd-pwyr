@@ -83,6 +83,13 @@ class Login extends Component {
                     >
                         <div className='content'>Log-in to your account</div>
                     </h2>
+                    <form className='ui large form'>
+                        <div className='ui raised segment'>
+                            <div className='field'>
+                                
+                            </div>
+                        </div>
+                    </form>
                     </div>
                 </div>
             </div>
