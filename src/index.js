@@ -8,8 +8,6 @@ import thunk from 'redux-thunk'
 
 import App from './components/App'
 
-import middleWare from './middleware'
-
 const store = createStore(reducer, middleWare)
 
 ReactDOM.render(
