@@ -53,23 +53,7 @@ class Login extends Component {
         if (!users) {
             return
         }
-        return (
-            <Fragment>
-                <Segment.Group>
-                    <LoginHeader />
-                    <LoginGridLayout
-                        image={<BrandImage />}
-                        form={<ConnectedLoginForm onLoading={this.handleLoading} />}
-                        loading={this.state.loading}
-                     />
-                </Segment.Group>
-                <footer className='footer'>
-                    <a href='https://www.freepik.com/free-photos-vectors/design'>
-                        Avatar characters created by freepik - www.freepik.com
-                    </a>
-                </footer>
-            </Fragment>
-        )
+        
     }
 }
 
