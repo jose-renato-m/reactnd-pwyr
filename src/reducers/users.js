@@ -14,11 +14,10 @@ export default function users (state = {}, action) {
         case USER_ADDED_QUESTION:            
             return {
                 ...state,
-                [authedUser]: {
-                    ...state[authedUser],
-                    answers: {
-                        ...state[authedUser].answers,
-                        [qid]: answer
+                [action.authedUser]: {
+                    ...state[action.authedUser],
+                    questions: [...state[action.authedUser].questions,
+                    action.qid]                        
                     }
                 }
             }
