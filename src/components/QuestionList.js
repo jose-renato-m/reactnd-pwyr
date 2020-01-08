@@ -1,5 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import {
+    Button,
+    Card,
+    Image,
+    Label,
+    Menu,
+    Tab,
+} from 'semantic-ui-react'
 
 class QuestionList extends Component {
     cardItemsPerRow = 2
