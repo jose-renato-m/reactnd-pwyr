@@ -29,6 +29,9 @@ class QuestionList extends Component {
                                 {question.optionTwo.text}?
                             </div>
                         </Card.Content>
+                        <Card.Content extra>
+                            
+                        </Card.Content>
                     </Card>
                 )
             })        
