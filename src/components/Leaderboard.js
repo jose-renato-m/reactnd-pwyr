@@ -51,7 +51,9 @@ class Leaderboard extends Component {
             const score = answeredQuestions + createdQuestions            
         })
         return (
-            
+            <Card key={uid}>
+                
+            </Card>
         )
     }    
 }
