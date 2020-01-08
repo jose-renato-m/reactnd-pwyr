@@ -33,6 +33,10 @@ class Leaderboard extends Component {
             .forEach((user) => {
                 usersWithScoreSorted[user.id] = user
             })
+
+        const userCards = Object.keys(usersWithScoreSorted).map((uid) => {
+            const user = usersWithScoreSorted[uid]
+        })
     }
     
     }
