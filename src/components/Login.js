@@ -97,6 +97,11 @@ class Login extends Component {
                             <Message hidden={message.hidden} negative>
                                 {message.content}
                             </Message>
+                            <div className='field'>
+                                Select a user from above and click the login button.
+                                <br />
+                                This is a demo app and doesn't require a password.
+                            </div>
                         </div>
                     </form>
                     </div>
