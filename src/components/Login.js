@@ -121,4 +121,7 @@ const mapStateToProps = ({ users }) => {
     return { users }
 }
 
-export default connect()(Login)
+export default connect(
+    mapStateToProps,
+    { setAuthedUser }
+)(Login)
