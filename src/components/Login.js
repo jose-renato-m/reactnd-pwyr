@@ -19,8 +19,8 @@ class Login extends Component {
         history.push('/login')
     }
 
-    handleLoading = () => {
-        this.setState({ loading: true })
+    handleUserSelection = (e, data) => {
+        this.setState({ selectedUser: data.value })
     }
 
     render() {
