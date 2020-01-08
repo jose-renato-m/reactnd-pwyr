@@ -9,6 +9,11 @@ class Login extends Component {
         message: { hidden: true, content: ''}
     }
     referrer = null
+
+    componentDidMount() {
+        
+    }
+
     handleLoading = () => {
         this.setState({ loading: true })
     }
