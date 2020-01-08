@@ -48,10 +48,10 @@ class Leaderboard extends Component {
             }
             const answeredQuestions = Object.keys(user.answers).length
             const createdQuestions = user.questions.length
-            const score = answeredQuestions + createdQuestions            
-        })
-        return (
-            <Card key={uid}>
+            const score = answeredQuestions + createdQuestions
+                        
+            return (
+                <Card key={uid}>
                 <Image src={user.avatarURL} label={label} />
                 <Card.Content>
                     <Card.Header>{user.name}</Card.Header>
@@ -83,6 +83,10 @@ class Leaderboard extends Component {
                     </Card.Description>
                 </Card.Content>
             </Card>
+            )
+        })
+        return (
+            
         )
     }    
 }
