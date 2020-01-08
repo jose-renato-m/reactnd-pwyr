@@ -25,6 +25,14 @@ class Leaderboard extends Component {
             user.score = answeredQuestions + createdQuestions
             usersWithScore[uid] = user
         })
+
+        const usersWithScoreSorted = {}
+        Object.keys(users)
+            .map((uid) => users[uid])
+            .sort((a, b) => b.score - a.score)
+            .forEach((user) => {
+                usersWithScoreSorted[user.id] = user
+            })
     }
     
     }
