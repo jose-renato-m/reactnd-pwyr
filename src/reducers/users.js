@@ -31,6 +31,8 @@ export default function users (state = {}, action) {
                     }                    
                 }
             }
+        default:
+            return state
             }
         case ADD_QUESTION_TO_USER:
             const { id, author } = action
