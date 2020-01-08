@@ -1,7 +1,7 @@
 import { 
     LOAD_USERS,
-    ADD_ANSWER_TO_USER,
-    ADD_QUESTION_TO_USER,
+    USER_ADDED_QUESTION,
+    USER_ASWERED_QUESTION,
 } from '../actions/users'
 
 export default function users (state = {}, action) {
