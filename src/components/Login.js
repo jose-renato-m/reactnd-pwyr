@@ -67,7 +67,16 @@ class Login extends Component {
             <div className='ui container'>
                 <div className='ui middle aligned center aligned grid'>
                     <div className='column' style={{ width: '420px', marginTop: '5em' }}>
-                        
+                      <Image
+                        src='/would-you-rather.png'  
+                        style={{
+                            position: 'absolute',
+                            zIndex: '100'
+                            top: '15px',
+                            left: '30px',
+                            width: '85px'
+                        }}
+                     />
                     </div>
                 </div>
             </div>
