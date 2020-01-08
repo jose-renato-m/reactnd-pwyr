@@ -63,6 +63,15 @@ class QuestionList extends Component {
                 !questions[id].optionTwo.votes.includes(authedUser)
         )
 
+        const [
+            answeredQuestionsCount,
+            answeredQuestionsContent = 'There are no answered questions available.'
+        ] = this.getCardsFromQuestions(
+            (qid) => 
+                questions[qid].optionOne.votes.includes(authedUser) ||
+                questions[qid].optionTwo.votes.includes(authedUser)
+        )
+
         return (
 
         )
