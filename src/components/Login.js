@@ -102,6 +102,12 @@ class Login extends Component {
                                 <br />
                                 This is a demo app and doesn't require a password.
                             </div>
+                            <div
+                                className='ui fluid black submit button'
+                                onClick={this.handleUserLogin}
+                            >
+                                Login
+                            </div>
                         </div>
                     </form>
                     </div>
