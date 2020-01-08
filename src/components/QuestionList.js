@@ -24,6 +24,10 @@ class QuestionList extends Component {
                         <Card.Content>
                             <Image floated='right' size='tiny' src={user.avatarURL} />
                             <Card.Header>{user.name} asks</Card.Header>
+                            <div>
+                                Would you rather {question.optionOne.text} or{''}
+                                {question.optionTwo.text}?
+                            </div>
                         </Card.Content>
                     </Card>
                 )
