@@ -11,7 +11,12 @@ class Login extends Component {
     referrer = null
 
     componentDidMount() {
-        
+        const {
+            history,
+            location: { pathname }
+        } = this.props
+        this.referrer = pathname
+        history.push('/login')
     }
 
     handleLoading = () => {
