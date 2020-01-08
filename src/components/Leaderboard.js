@@ -53,6 +53,12 @@ class Leaderboard extends Component {
         return (
             <Card key={uid}>
                 <Image src={user.avatarURL} label={label} />
+                <Card.Content>
+                    <Card.Header>{user.name}</Card.Header>
+                    <Card.Meta>
+                        Rank &nbsp
+                    </Card.Meta>
+                </Card.Content>
             </Card>
         )
     }    
