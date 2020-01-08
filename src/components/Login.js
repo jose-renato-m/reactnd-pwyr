@@ -94,6 +94,9 @@ class Login extends Component {
                                 onChange={this.handleUserSelection}
                              />
                             </div>
+                            <Message hidden={message.hidden} negative>
+                                {message.content}
+                            </Message>
                         </div>
                     </form>
                     </div>
