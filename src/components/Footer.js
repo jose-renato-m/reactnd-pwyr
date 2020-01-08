@@ -8,7 +8,8 @@ class Footer extends Component {
                 style={{ marginTop: '3em', padding: '3em 0' }}
             >
                 <div className='ui container smaller' style={{ fontSize: '0.9em' }}>
-                    
+                    {new Date().getFullYear()}, Would You Rather app created using React,
+                    Redux, React Router and Semantic UI.
                 </div>
             </div>
         )
