@@ -117,4 +117,8 @@ class Login extends Component {
     }
 }
 
+const mapStateToProps = ({ users }) => {
+    return { users }
+}
+
 export default connect()(Login)
