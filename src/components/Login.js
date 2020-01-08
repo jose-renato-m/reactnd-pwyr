@@ -24,7 +24,23 @@ class Login extends Component {
     }
 
     handleUserLogin = () => {
-        
+        const { history } = this.props
+        if (!this.state.selectedUser) {
+            this.setState({
+                message: {
+                    hidden: false,
+                    content: 'Please select a user'
+                }
+            })
+            return
+        } else {
+            this.setState({
+                message: {
+                    hidden: true,
+                    content: ''
+                }
+            })
+        }
     }
 
     render() {
