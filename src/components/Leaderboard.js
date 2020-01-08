@@ -36,6 +36,16 @@ class Leaderboard extends Component {
 
         const userCards = Object.keys(usersWithScoreSorted).map((uid) => {
             const user = usersWithScoreSorted[uid]
+            let label = null
+            let awardColor = awardColors[rank++]
+            if (awardColor) {
+                label = {
+                    as: 'div',
+                    corner: 'left',
+                    icon: 'trophy',
+                    color: awardColor,
+                }
+            }
         })
     }
     
