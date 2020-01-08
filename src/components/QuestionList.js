@@ -54,6 +54,15 @@ class QuestionList extends Component {
     render() {
         const { questions, authedUser, activeIndex, handleTabChange } = this.props
 
+        const [
+            unansweredQuestionsCount,
+            unansweredQuestionsContent = 'All questions have been answered.'
+        ] = this.getCardsFromQuestions(
+            (id) =>
+                !questions[id].optionOne.votes.includes(authedUser) &&
+                !questions[id].optionTwo.votes.includes(authedUser)
+        )
+
         return (
 
         )
