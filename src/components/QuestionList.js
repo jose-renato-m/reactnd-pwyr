@@ -20,7 +20,11 @@ class QuestionList extends Component {
                 const question = questions[qid]
                 const user = users[question.author]
                 return (
-                    
+                    <Card key={qid}>
+                        <Card.Content>
+                            
+                        </Card.Content>
+                    </Card>
                 )
             })        
     }
