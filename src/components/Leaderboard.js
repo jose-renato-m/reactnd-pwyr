@@ -46,6 +46,9 @@ class Leaderboard extends Component {
                     color: awardColor,
                 }
             }
+            const answeredQuestions = Object.keys(user.answers).length
+            const createdQuestions = user.questions.length
+            const score = answeredQuestions + createdQuestions
         })
     }
     
