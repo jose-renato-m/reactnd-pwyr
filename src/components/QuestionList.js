@@ -5,7 +5,16 @@ class QuestionList extends Component {
     cardItemsPerRow = 2
 
     getCardsFromQuestions = (filterLogic) => {
-        const { questions, users } = this.props        
+        const { questions, users } = this.props
+        const cards = Object.keys(questions)
+            .filter(filterLogic)
+            .map((qid) => {
+                const question = questions[qid]
+                const user = users[question.author]
+                return (
+                    
+                )
+            })        
     }
 }
 
