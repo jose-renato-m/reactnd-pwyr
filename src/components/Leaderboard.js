@@ -57,6 +57,10 @@ class Leaderboard extends Component {
                     <Card.Header>{user.name}</Card.Header>
                     <Card.Meta>
                         Rank &nbsp
+                        <Label size='tiny'>
+                            {rank}
+                            {rankSuffix.shift() || 'th'}
+                        </Label>
                     </Card.Meta>
                 </Card.Content>
             </Card>
