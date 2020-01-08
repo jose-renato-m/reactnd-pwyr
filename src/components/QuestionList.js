@@ -41,7 +41,14 @@ class QuestionList extends Component {
                         </Card.Content>
                     </Card>
                 )
-            })        
+            })
+            
+            return cards.length
+                ? [
+                    cards.length,
+                    <Card.Group itemsPerRow={this.cardItemsPerRow}>{cards}</Card.Group>
+                  ]
+                : [cards.length]
     }
 }
 
