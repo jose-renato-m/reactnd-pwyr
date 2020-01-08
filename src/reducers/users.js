@@ -11,9 +11,7 @@ export default function users (state = {}, action) {
                 ...state,
                 ...action.users
             }
-        case USER_ADDED_QUESTION:
-            const { authedUser, qid, answer } = action
-
+        case USER_ADDED_QUESTION:            
             return {
                 ...state,
                 [authedUser]: {
