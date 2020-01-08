@@ -33,7 +33,9 @@ class QuestionList extends Component {
                         <Card.Content extra>
                             <div className='ui two buttons'>
                                <Link to={`/questions/${qid}`} style={{ width: '100%' }}>
-                                    
+                                   <Button fluid basic color='black'>
+                                        View Poll
+                                   </Button> 
                                </Link> 
                             </div>
                         </Card.Content>
