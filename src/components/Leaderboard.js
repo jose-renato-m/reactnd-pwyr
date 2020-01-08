@@ -16,6 +16,11 @@ class Leaderboard extends Component {
         const awardColors = ['red', 'orange', 'yellow']
         let rank = 0
         let rankSuffix = ['st', 'nd', 'rd']
+
+        const usersWithScore = {}
+        Object.keys(users).forEach((uid) =>{
+            
+        })
     }
     
     }
