@@ -22,7 +22,7 @@ class QuestionList extends Component {
                 return (
                     <Card key={qid}>
                         <Card.Content>
-                            
+                            <Image floated='right' size='tiny' src={user.avatarURL} />
                         </Card.Content>
                     </Card>
                 )
