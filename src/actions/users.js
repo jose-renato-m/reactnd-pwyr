@@ -11,7 +11,9 @@ export function loadUsers (users) {
 
 export function userAddedQuestion({ authedUser, qid }) {
     return {
-
+        type: USER_ADDED_QUESTION,
+        authedUser,
+        qid,
     }
 }
 
