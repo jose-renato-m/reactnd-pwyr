@@ -124,4 +124,4 @@ const mapStateToProps = () => {
     }
 }
 
-export default connect()(QuestionList)
+export default connect(mapStateToProps)(QuestionList)
