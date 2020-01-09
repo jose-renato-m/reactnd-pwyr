@@ -11,6 +11,10 @@ class QuestionNew extends Component {
     handleOnChange = (e, data) => {
         this.setState({ [data.id]: data.value })
     }
+
+    handleClick = async () => {
+        
+    }
 }
 
 export default connect() (QuestionNew)
