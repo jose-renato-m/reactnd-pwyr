@@ -7,6 +7,10 @@ class QuestionNew extends Component {
         optionTwo: '',
         message: { hidden: true, content: ''}
     }
+
+    handleOnChange = (e, data) => {
+        this.setState({ [data.id]: data.value })
+    }
 }
 
 export default connect() (QuestionNew)
