@@ -15,6 +15,23 @@ class QuestionNew extends Component {
     handleClick = async () => {
         const { optionOne: optionOneText, optionTwo: optionTwoText } = this.state
         const { authedUser: author, history, resetActiveIndexToZero } = this.props
+
+        if (!optionOneText || !optionTwoText) {
+            this.setState({
+                message: {
+                    hidden: false,
+                    content: 'Please enter both Option One Text and Option Two Text'
+                }
+            })
+            return
+        } else {
+            this.setState({
+                message: {
+                    hidden: true,
+                    content: ''
+                }
+            })
+        }
     }
 }
 
