@@ -13,7 +13,8 @@ class QuestionNew extends Component {
     }
 
     handleClick = async () => {
-        
+        const { optionOne: optionOneText, optionTwo: optionTwoText } = this.state
+        const { authedUser: author, history, resetActiveIndexToZero } = this.props
     }
 }
 
