@@ -117,7 +117,11 @@ const sortQuestionsByTimeStamp = (questions) => {
 }
 
 const mapStateToProps = () => {
-    
+    return {
+        questions: sortQuestionsByTimeStamp(state.questions),
+        users: state.users,
+        authedUser: state.authedUser,
+    }
 }
 
 export default connect()(QuestionList)
