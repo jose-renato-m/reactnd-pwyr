@@ -154,6 +154,10 @@ class QuestionView extends Component {
             </Card>
         )
     }
+
+    didAnswer() {
+        
+    }
 }
 
 
