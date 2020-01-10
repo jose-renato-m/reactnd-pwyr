@@ -72,7 +72,11 @@ class QuestionView extends Component {
                     <Card.Header>{user.name} asks</Card.Header>
                     <div>Would you rather</div>
                     <Card.Description>
-                        
+                        <Segment>
+                            {votedForOptionOne && (
+                                
+                            )}
+                        </Segment>
                     </Card.Description>
                 </Card.Content>
             </Card>
