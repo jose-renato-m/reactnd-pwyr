@@ -11,6 +11,14 @@ class Menu extends Component {
             <div className='ui fixed inverted menu'>
                 <div className='ui container'>
                     <div className='item' />
+                    <NavLink
+                        to='/'
+                        exact
+                        className='header item'
+                        activeClassName='active'
+                    >
+                        
+                    </NavLink>
                 </div>
             </div>
         )
