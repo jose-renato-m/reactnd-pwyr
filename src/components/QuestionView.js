@@ -183,9 +183,12 @@ class QuestionView extends Component {
 
     render() {
         let result
-        return (
-
-        )
+        if (this.didAnswer() === true) {
+            result = this.questionResult()
+        } else {
+            result = this.questionAnswer()
+        }
+        return <Card.Group centered>{result}</Card.Group>
     }
 }
 
