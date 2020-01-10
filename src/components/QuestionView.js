@@ -66,7 +66,11 @@ class QuestionView extends Component {
             Math.round((voteCountOptionTwo / totalVotes) * 10000) / 100
         
         return (
-
+            <Card key={qid} style={{ width: '400px'}}>
+                <Card.Content>
+                    
+                </Card.Content>
+            </Card>
         )
     }
 }
