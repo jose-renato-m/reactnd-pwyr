@@ -10,7 +10,22 @@ class QuestionView extends Component {
     }
 
     handleClick = () => {
-        
+        if (!this.state.votedForOption) {
+            this.setState({
+                message: {
+                    hidden: false,
+                    content: 'Please select an option'
+                }
+            })
+            return
+        } else {
+            this.setState({
+                message: {
+                    hidden: true,
+                    content: ''
+                }
+            })
+        }
     }
 }
 
