@@ -65,14 +65,22 @@ class QuestionNew extends Component {
                             <div>Would you rather</div>
                             <Card.Description>
                                 <Form>
-                                    <Form.Fiel>
+                                    <Form.Field>
                                         <Input
                                             id='optionOne'
                                             placeholder='Enter Option One Text Here'
                                             value={this.state.optionOne}
                                             onChange={this.handleOnChange}
                                          />
-                                    </Form.Fiel>
+                                    </Form.Field>
+                                    <Form.Field>
+                                        <Input
+                                            id='optionTwo'
+                                            placeholder='Enter Option Two Text Here'
+                                            value={this.state.optionTwo}
+                                            onChange={this.handleOnChange}
+                                         />
+                                    </Form.Field>
                                 </Form>
                             </Card.Description>
                         </Card.Content>
