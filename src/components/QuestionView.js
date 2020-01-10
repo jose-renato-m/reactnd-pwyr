@@ -4,6 +4,12 @@ import { handleAnswerQuestion } from '../actions/questions'
 
 class QuestionView extends Component {
     state = { votedForOption: null, message: { hidden: true, content: '' }}
+
+    handleChange = (e, data) => {
+        this.setState({ votedForOption: data.value})
+    }
 }
+
+
 
 export default connect()(QuestionView)
