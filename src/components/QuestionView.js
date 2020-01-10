@@ -53,6 +53,10 @@ class QuestionView extends Component {
             Math.round((voteCountOptionOne / totalVotes) * 10000) / 100
         const votePercentOptionTwo =
             Math.round((voteCountOptionTwo / totalVotes) * 10000) / 100
+        
+        return (
+            
+        )
     }
 }
 
