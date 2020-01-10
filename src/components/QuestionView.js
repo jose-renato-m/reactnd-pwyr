@@ -119,7 +119,11 @@ class QuestionView extends Component {
                     <Card.Header>{user.name} asks</Card.Header>
                     <div>Would you rather</div>
                     <Card.Description>
-                        
+                        <Form>
+                            <Form.Field>
+                                
+                            </Form.Field>
+                        </Form>
                     </Card.Description>
                 </Card.Content>                
             </Card>
