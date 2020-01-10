@@ -79,6 +79,9 @@ class QuestionView extends Component {
                                 </Label>
                             )}
                             <p>{question.optionOne.text}</p>
+                            <Progress percent={votePercentOptionOne} progress>
+                                {voteCountOptionOne} out of {totalVotes}
+                            </Progress>
                         </Segment>
                     </Card.Description>
                 </Card.Content>
