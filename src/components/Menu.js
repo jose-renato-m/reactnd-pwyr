@@ -7,7 +7,11 @@ class Menu extends Component {
         const { name, avatarURL } = users[authedUser]
 
         return (
-
+            <div className='ui fixed inverted menu'>
+                <div className='ui container'>
+                    <div className='item' />
+                </div>
+            </div>
         )
     }
 }
