@@ -40,6 +40,12 @@ class QuestionNew extends Component {
         resetActiveIndexToZero()
         history.push('/')
     }
+
+    render() {
+        return (
+            
+        )
+    }
 }
 
 export default connect() (QuestionNew)
