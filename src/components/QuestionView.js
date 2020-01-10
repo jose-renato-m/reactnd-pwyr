@@ -117,7 +117,8 @@ class QuestionView extends Component {
                 <Card.Content>
                     <Image floated='right' size='tiny' src={user.avatarURL} />
                     <Card.Header>{user.name} asks</Card.Header>
-                </Card.Content>
+                    <div>Would you rather</div>
+                </Card.Content>                
             </Card>
         )
     }
