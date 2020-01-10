@@ -18,7 +18,10 @@ class Menu extends Component {
                         className='header item'
                         activeClassName='active'
                     >
-                        
+                        <Image
+                            src='/would-you-rather.png'
+                            style={{ width: '50px', marginRight: '5px' }}
+                         />
                     </NavLink>
                 </div>
             </div>
