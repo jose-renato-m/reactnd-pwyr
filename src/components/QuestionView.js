@@ -156,7 +156,18 @@ class QuestionView extends Component {
     }
 
     didAnswer() {
-        
+        const { authedUser, questions } = this.props
+        const qid = this.props.match.params.question_id
+
+        const question = questions[qid]
+        if (!question) {
+            return null
+        }
+
+        return (
+            question.optionOne.votes.includes(authedUser) ||
+            question.optionTwo.votes.includes(authedUser)
+        )
     }
 }
 
