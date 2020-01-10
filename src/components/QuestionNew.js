@@ -32,6 +32,13 @@ class QuestionNew extends Component {
                 }
             })
         }
+        await this.props.handleAddQuestion({
+            optionOneText,
+            optionTwoText,
+            author,
+        })
+        resetActiveIndexToZero()
+        history.push('/')
     }
 }
 
