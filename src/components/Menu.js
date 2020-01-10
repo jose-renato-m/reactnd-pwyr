@@ -22,6 +22,18 @@ class Menu extends Component {
                             src='/would-you-rather.png'
                             style={{ width: '50px', marginRight: '5px' }}
                          />
+                         Home
+                    </NavLink>
+                    <NavLink to='/add' exact className='item' activeClassName='active'>
+                        New Question
+                    </NavLink>
+                    <NavLink
+                        to='leaderboard'
+                        exact
+                        className='item'
+                        activeClassName='active'
+                    >
+                        Leader Board
                     </NavLink>
                 </div>
             </div>
