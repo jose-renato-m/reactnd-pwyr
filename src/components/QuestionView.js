@@ -145,7 +145,9 @@ class QuestionView extends Component {
                     </Card.Description>
                 </Card.Content>
                 <Card.Content extra>
-                    
+                    <div className='ui two buttons'>
+                        
+                    </div>
                 </Card.Content>                
             </Card>
         )
