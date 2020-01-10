@@ -36,7 +36,7 @@ class Menu extends Component {
                         Leader Board
                     </NavLink>
                     <div className='ui right floated item'>
-                        
+                        <span style={{ marginRight: '10px' }}>Hello, {name}</span>
                     </div>
                 </div>
             </div>
