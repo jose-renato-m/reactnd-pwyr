@@ -106,4 +106,7 @@ const mapStateToProps = (state) => {
     return { users: state.users, authedUser: state.authedUser }
 }
 
-export default connect() (QuestionNew)
+export default connect(
+    mapStateToProps,
+    { handleAddQuestion }
+) (QuestionNew)
