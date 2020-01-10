@@ -8,6 +8,7 @@ import {
     Input,
     Message,
 } from 'semantic-ui-react'
+import { handleAddQuestion } from '../actions/questions'
 
 class QuestionNew extends Component {
     state = {
