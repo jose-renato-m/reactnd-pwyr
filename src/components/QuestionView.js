@@ -41,6 +41,18 @@ class QuestionView extends Component {
         if (!question) {
             return
         }
+
+        const user = users[question.author]
+
+        const votedForOptionOne = question.optionOne.votes.includes(authedUser)
+        const votedForOptionTwo = question.optionTwo.votes.includes(authedUser)
+        const voteCountOptionOne = question.optionOne.votes.length
+        const voteCountOptionTwo = question.optionTwo.votes.length
+        const totalVotes = voteCountOptionOne + voteCountOptionTwo
+        const votePercentOptionOne =
+            Math.round((voteCountOptionOne / totalVotes) * 10000) / 100
+        const votePercentOptionTwo =
+            Math.round((voteCountOptionTwo / totalVotes) * 10000) / 100
     }
 }
 
