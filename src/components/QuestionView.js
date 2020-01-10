@@ -36,6 +36,11 @@ class QuestionView extends Component {
     questionResult = () => {
         const qid = this.props.match.params.question_id
         const { authedUser, questions, users } = this.props
+
+        const question = questions[qid]
+        if (!question) {
+            return
+        }
     }
 }
 
