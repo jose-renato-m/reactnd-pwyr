@@ -32,6 +32,11 @@ class QuestionView extends Component {
         const { authedUser, handleAnswerQuestion } = this.props
         handleAnswerQuestion({ authedUser, qid, answer })
     }
+
+    questionResult = () => {
+        const qid = this.props.match.params.question_id
+        const { authedUser, questions, users } = this.props
+    }
 }
 
 
