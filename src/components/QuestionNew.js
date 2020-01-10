@@ -90,7 +90,9 @@ class QuestionNew extends Component {
 
                         <Card.Content extra>
                             <div className='ui two buttons'>
-                                
+                                <Button basic color='black' onClick={this.handleClick}>
+                                    Submit
+                                </Button>
                             </div>
                         </Card.Content>
                     </Card>
