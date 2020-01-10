@@ -138,6 +138,9 @@ class QuestionView extends Component {
                                     onChange={this.handleChange}
                                  />
                             </Form.Field>
+                            <Message hidden={message.hidden} negative>
+                                {message.content}
+                            </Message>
                         </Form>
                     </Card.Description>
                 </Card.Content>                
