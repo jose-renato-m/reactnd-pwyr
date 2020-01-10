@@ -64,7 +64,11 @@ class QuestionNew extends Component {
                             <Card.Header>{user.name} asks</Card.Header>
                             <div>Would you rather</div>
                             <Card.Description>
-                                
+                                <Form>
+                                    <Form.Fiel>
+                                        
+                                    </Form.Fiel>
+                                </Form>
                             </Card.Description>
                         </Card.Content>
                     </Card>
