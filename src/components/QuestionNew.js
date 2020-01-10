@@ -66,7 +66,12 @@ class QuestionNew extends Component {
                             <Card.Description>
                                 <Form>
                                     <Form.Fiel>
-                                        
+                                        <Input
+                                            id='optionOne'
+                                            placeholder='Enter Option One Text Here'
+                                            value={this.state.optionOne}
+                                            onChange={this.handleOnChange}
+                                         />
                                     </Form.Fiel>
                                 </Form>
                             </Card.Description>
