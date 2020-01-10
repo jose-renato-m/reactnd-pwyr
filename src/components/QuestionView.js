@@ -74,7 +74,9 @@ class QuestionView extends Component {
                     <Card.Description>
                         <Segment>
                             {votedForOptionOne && (
-                                
+                                <Label as='a' color='red' ribbon='right'>
+                                    Your Vote
+                                </Label>
                             )}
                         </Segment>
                     </Card.Description>
