@@ -47,7 +47,9 @@ class QuestionNew extends Component {
         const { message } = this.state
 
         return (
-
+            <div>
+                
+            </div>
         )
     }
 }
