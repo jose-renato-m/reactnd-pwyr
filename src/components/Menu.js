@@ -35,6 +35,9 @@ class Menu extends Component {
                     >
                         Leader Board
                     </NavLink>
+                    <div className='ui right floated item'>
+                        
+                    </div>
                 </div>
             </div>
         )
