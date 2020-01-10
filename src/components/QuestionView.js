@@ -182,8 +182,9 @@ class QuestionView extends Component {
     }
 
     render() {
+        let result
         return (
-            
+
         )
     }
 }
