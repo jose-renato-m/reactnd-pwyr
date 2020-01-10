@@ -200,4 +200,7 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect()(QuestionView)
+export default connect(
+    mapStateToProps,
+    { handleAnswerQuestion }
+)(QuestionView)
