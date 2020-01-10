@@ -26,6 +26,11 @@ class QuestionView extends Component {
                 }
             })
         }
+
+        const qid = this.props.match.params.question_id
+        const answer = this.state.votedForOption
+        const { authedUser, handleAnswerQuestion } = this.props
+        handleAnswerQuestion({ authedUser, qid, answer })
     }
 }
 
