@@ -192,6 +192,12 @@ class QuestionView extends Component {
     }
 }
 
-
+const mapStateToProps = (state) => {
+    return {
+        authedUser: state.authedUser,
+        questions: state.questions,
+        users: state.users,
+    }
+}
 
 export default connect()(QuestionView)
