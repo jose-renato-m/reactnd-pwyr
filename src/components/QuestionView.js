@@ -180,6 +180,12 @@ class QuestionView extends Component {
             history.push('/404')
         }
     }
+
+    render() {
+        return (
+            
+        )
+    }
 }
 
 
