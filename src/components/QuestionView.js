@@ -121,7 +121,13 @@ class QuestionView extends Component {
                     <Card.Description>
                         <Form>
                             <Form.Field>
-                                
+                                <Radio
+                                    label={question.optionOne.text}
+                                    name='radioGroupVote'
+                                    value='optionOne'
+                                    checked={this.state.votedForOption === 'optionOne'}
+                                    onChange={this.handleChange}
+                                 />
                             </Form.Field>
                         </Form>
                     </Card.Description>
