@@ -101,7 +101,20 @@ class QuestionView extends Component {
     }
 
     questionAnswer = () => {
-        
+        const qid = this.props.match.params.question_id
+        const { questions, users } = this.props
+
+        const question = questions[qid]
+        if (!question) {
+            return
+        }
+
+        const user = users[question.author]
+        const { message } = this.state
+
+        return (
+            
+        )
     }
 }
 
