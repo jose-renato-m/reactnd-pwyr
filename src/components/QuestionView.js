@@ -171,7 +171,14 @@ class QuestionView extends Component {
     }
 
     componentDidMount() {
-        
+        const { questions } = this.props
+        const qid = this.props.match.params.question_id
+
+        const question = questions[qid]
+        if (!question) {
+            const { history } = this.props
+            history.push('/404')
+        }
     }
 }
 
