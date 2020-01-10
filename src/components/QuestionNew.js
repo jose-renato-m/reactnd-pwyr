@@ -87,6 +87,10 @@ class QuestionNew extends Component {
                                 </Form>
                             </Card.Description>
                         </Card.Content>
+
+                        <Card.Content extra>
+                            
+                        </Card.Content>
                     </Card>
                 </Card.Group>
             </div>
