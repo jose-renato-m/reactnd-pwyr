@@ -143,6 +143,9 @@ class QuestionView extends Component {
                             </Message>
                         </Form>
                     </Card.Description>
+                </Card.Content>
+                <Card.Content extra>
+                    
                 </Card.Content>                
             </Card>
         )
