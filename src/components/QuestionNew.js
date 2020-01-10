@@ -60,7 +60,7 @@ class QuestionNew extends Component {
                 <Card.Group centered>
                     <Card style={{ width: '400px' }}>
                         <Card.Content>
-                            
+                            <Image floated='right' size='tiny' src={user.avatarURL} />
                         </Card.Content>
                     </Card>
                 </Card.Group>
