@@ -83,6 +83,11 @@ class QuestionView extends Component {
                                 {voteCountOptionOne} out of {totalVotes}
                             </Progress>
                         </Segment>
+                        <Segment>
+                            {votedForOptionTwo && (
+                                
+                            )}
+                        </Segment>
                     </Card.Description>
                 </Card.Content>
             </Card>
