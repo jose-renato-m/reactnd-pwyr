@@ -1,5 +1,16 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import {
+    Card,
+    Image,
+    Segment,
+    Label,
+    Progress,
+    Button,
+    Form,
+    Radio,
+    Message,
+} from 'semantic-ui-react'
 import { handleAnswerQuestion } from '../actions/questions'
 
 class QuestionView extends Component {
@@ -55,7 +66,7 @@ class QuestionView extends Component {
             Math.round((voteCountOptionTwo / totalVotes) * 10000) / 100
         
         return (
-            
+
         )
     }
 }
