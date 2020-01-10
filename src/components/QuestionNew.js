@@ -81,6 +81,9 @@ class QuestionNew extends Component {
                                             onChange={this.handleOnChange}
                                          />
                                     </Form.Field>
+                                    <Message hidden={message.hidden} negative>
+                                        {message.content}
+                                    </Message>
                                 </Form>
                             </Card.Description>
                         </Card.Content>
