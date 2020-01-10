@@ -89,7 +89,9 @@ class QuestionNew extends Component {
                         </Card.Content>
 
                         <Card.Content extra>
-                            
+                            <div className='ui two buttons'>
+                                
+                            </div>
                         </Card.Content>
                     </Card>
                 </Card.Group>
