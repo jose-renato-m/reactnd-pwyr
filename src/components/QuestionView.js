@@ -8,6 +8,10 @@ class QuestionView extends Component {
     handleChange = (e, data) => {
         this.setState({ votedForOption: data.value})
     }
+
+    handleClick = () => {
+        
+    }
 }
 
 
