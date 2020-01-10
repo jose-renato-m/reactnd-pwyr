@@ -68,7 +68,7 @@ class QuestionView extends Component {
         return (
             <Card key={qid} style={{ width: '400px'}}>
                 <Card.Content>
-                    
+                    <Image floated='right' size='tiny' src={user.avatarURL} />
                 </Card.Content>
             </Card>
         )
