@@ -113,7 +113,11 @@ class QuestionView extends Component {
         const { message } = this.state
 
         return (
-            
+            <Card key={qid} style={{ width: '400px' }}>
+                <Card.Content>
+                    <Card.Header>{user.name} asks</Card.Header>
+                </Card.Content>
+            </Card>
         )
     }
 }
