@@ -42,8 +42,12 @@ class QuestionNew extends Component {
     }
 
     render() {
+        const { authedUser, users } = this.props
+        const user = users[authedUser]
+        const { message } = this.state
+
         return (
-            
+
         )
     }
 }
