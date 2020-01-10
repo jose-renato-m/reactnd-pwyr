@@ -78,6 +78,7 @@ class QuestionView extends Component {
                                     Your Vote
                                 </Label>
                             )}
+                            <p>{question.optionOne.text}</p>
                         </Segment>
                     </Card.Description>
                 </Card.Content>
