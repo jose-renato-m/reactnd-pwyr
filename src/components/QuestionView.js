@@ -99,6 +99,10 @@ class QuestionView extends Component {
             </Card>
         )
     }
+
+    questionAnswer = () => {
+        
+    }
 }
 
 
