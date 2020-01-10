@@ -1,5 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import {
+    Button,
+    Card,
+    Form,
+    Image,
+    Input,
+    Message,
+} from 'semantic-ui-react'
 
 class QuestionNew extends Component {
     state = {
@@ -48,7 +56,7 @@ class QuestionNew extends Component {
 
         return (
             <div>
-                
+
             </div>
         )
     }
