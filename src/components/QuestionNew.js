@@ -57,7 +57,13 @@ class QuestionNew extends Component {
 
         return (
             <div>
-
+                <Card.Group centered>
+                    <Card style={{ width: '400px' }}>
+                        <Card.Content>
+                            
+                        </Card.Content>
+                    </Card>
+                </Card.Group>
             </div>
         )
     }
