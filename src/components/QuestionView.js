@@ -169,6 +169,10 @@ class QuestionView extends Component {
             question.optionTwo.votes.includes(authedUser)
         )
     }
+
+    componentDidMount() {
+        
+    }
 }
 
 
