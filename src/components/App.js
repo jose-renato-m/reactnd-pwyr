@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Grid } from 'semantic-ui-react'
 import { connect } from 'react-redux'
 import { handleInitialData } from '../actions/shared'
