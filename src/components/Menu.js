@@ -37,6 +37,7 @@ class Menu extends Component {
                     </NavLink>
                     <div className='ui right floated item'>
                         <span style={{ marginRight: '10px' }}>Hello, {name}</span>
+                        <img className='ui avatar image' src={avatarURL} alt='' />
                     </div>
                 </div>
             </div>
