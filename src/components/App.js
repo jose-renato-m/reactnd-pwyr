@@ -36,7 +36,9 @@ class App extends Component {
 
     if (!authedUser) {
       return (
+        <BrowserRouter>
         
+        </BrowserRouter>
       )
     }
 
