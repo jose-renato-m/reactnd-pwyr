@@ -51,7 +51,18 @@ class App extends Component {
             <Menu />
             <div className='ui main text container' style={{ marginTop: '7em' }}>
               <Switch>
-                
+                <Route
+                  path='/'
+                  exact
+                  render={() => {
+                    return (
+                      <QuestionList
+                        handleTabChange={this.handleTabChange}
+                        activeIndex={this.state.activeIndex}
+                       />
+                    )
+                  }}
+                 />
               </Switch>
             </div>
           </Fragment>
