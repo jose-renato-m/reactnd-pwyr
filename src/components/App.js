@@ -63,6 +63,17 @@ class App extends Component {
                     )
                   }}
                  />
+                 <Route
+                    path='/add'
+                    render={(history) => {
+                      return (
+                        <QuestionNew
+                          resetActiveIndexToZero={this.resetActiveIndexToZero}
+                          history={history.history}
+                         />
+                      )
+                    }}
+                   />
               </Switch>
             </div>
           </Fragment>
