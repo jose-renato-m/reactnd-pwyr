@@ -39,6 +39,9 @@ class Menu extends Component {
                         <span style={{ marginRight: '10px' }}>Hello, {name}</span>
                         <img className='ui avatar image' src={avatarURL} alt='' />
                     </div>
+                    <NavLink to='/logout' exact className='item' activeClassName='active'>
+                        Logout
+                    </NavLink>
                 </div>
             </div>
         )
