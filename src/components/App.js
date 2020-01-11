@@ -30,9 +30,16 @@ class App extends Component {
     const { handleInitialData } = this.props
     handleInitialData()
   }
-  
+
   render() {
     const { authedUser } = this.props
+
+    if (!authedUser) {
+      return (
+        
+      )
+    }
+
     return (
       <Router>
         <div className='App'>
