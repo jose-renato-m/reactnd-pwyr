@@ -6,6 +6,10 @@ class Logout extends Component {
     componentDidMount() {
         this.props.setAuthedUser(null)
     }
+
+    render() {
+        return<div>Logging out...</div>
+    }
 }
 
 export default connect()(Logout)
