@@ -116,7 +116,7 @@ const sortQuestionsByTimeStamp = (questions) => {
     return questionsSorted
 }
 
-const mapStateToProps = () => {
+const mapStateToProps = (state) => {
     return {
         questions: sortQuestionsByTimeStamp(state.questions),
         users: state.users,
