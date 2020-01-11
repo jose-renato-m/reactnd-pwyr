@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { Grid } from 'semantic-ui-react'
 import { connect } from 'react-redux'
+import LoadingBar from 'react-redux-loading-bar'
+import { Grid } from 'semantic-ui-react'
+
 import { handleInitialData } from '../actions/shared'
 import Login from './Login'
 import Nav from './Nav'
