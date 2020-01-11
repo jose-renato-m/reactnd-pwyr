@@ -45,6 +45,9 @@ class App extends Component {
     }
 
     return (
+      <BrowserRouter>
+      
+      </BrowserRouter>
       <Router>
         <div className='App'>
           {authedUser === null ? (
