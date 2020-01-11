@@ -7,16 +7,7 @@ import { handleInitialData } from '../actions/shared'
 import Menu from './Menu'
 import Footer from './Footer'
 
-import { Grid } from 'semantic-ui-react'
 
-
-import Login from './Login'
-import Nav from './Nav'
-import Home from './Home'
-import UserCard from './UserCard'
-import NewPoll from './NewPoll'
-import Leaderboard from './Leaderboard'
-import NoMatch from './NoMatch'
 
 class App extends Component {
   componentDidMount() {
