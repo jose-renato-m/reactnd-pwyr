@@ -27,8 +27,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.props.handleInitialData()
+    const { handleInitialData } = this.props
+    handleInitialData()
   }
+  
   render() {
     const { authedUser } = this.props
     return (
