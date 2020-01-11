@@ -49,6 +49,9 @@ class App extends Component {
           <Fragment>
             <LoadingBar style={{ zIndex: 1000 }} />
             <Menu />
+            <div className='ui main text container' style={{ marginTop: '7em' }}>
+              
+            </div>
           </Fragment>
       </BrowserRouter>         
     )
