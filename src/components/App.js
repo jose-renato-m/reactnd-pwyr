@@ -88,10 +88,9 @@ class App extends Component {
   }  
 }
 
-function mapStateToProps({ authedUser }) {
-  return {
-    authedUser
-  }
+const mapStateToProps = (state) => {
+    const { authedUser } = state
+    return { authedUser }
 }
 
 export default connect(
