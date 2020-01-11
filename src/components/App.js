@@ -46,7 +46,10 @@ class App extends Component {
 
     return (
       <BrowserRouter>
-      
+          <Fragment>
+            <LoadingBar style={{ zIndex: 1000 }} />
+            <Menu />
+          </Fragment>
       </BrowserRouter>         
     )
   }  
