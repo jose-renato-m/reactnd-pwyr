@@ -37,7 +37,9 @@ class App extends Component {
     if (!authedUser) {
       return (
         <BrowserRouter>
-        
+            <Switch>
+              <Route path='/' component={Login} />
+            </Switch>
         </BrowserRouter>
       )
     }
