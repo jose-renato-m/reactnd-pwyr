@@ -47,34 +47,7 @@ class App extends Component {
     return (
       <BrowserRouter>
       
-      </BrowserRouter>
-      <Router>
-        <div className='App'>
-          {authedUser === null ? (
-            <Route
-              render={() => (
-                <ContentGrid>
-                  <Login />
-                </ContentGrid>
-              )}
-             />
-          ) : (
-            <Fragment>
-              <Nav />
-              <ContentGrid>
-                <Switch>
-                  <Route exact path='/' component={Home} />
-                  <Route path='/questions/bad_id' component={NoMatch} />
-                  <Route path='/questions/:question_id' component={UserCard} />
-                  <Route path='/add' component={NewPoll} />
-                  <Route path='/leaderboard' component={Leaderboard} />
-                  <Route component={NoMatch} />
-                </Switch>
-              </ContentGrid>
-            </Fragment>
-          )}        
-        </div>
-      </Router>      
+      </BrowserRouter>         
     )
   }  
 }
