@@ -52,4 +52,4 @@ const mapStateToProps = (state) => {
     return { authedUser: state.authedUser, users: state.users }
 }
 
-export default connect()(Menu)
+export default connect(mapStateToProps)(Menu)
