@@ -7,7 +7,13 @@ import { handleInitialData } from '../actions/shared'
 import Menu from './Menu'
 import Footer from './Footer'
 
-
+import QuestionList from './QuestionList'
+import QuestionNew from './QuestionNew'
+import QuestionView from './QuestionView'
+import Leaderboard from './Leaderboard'
+import Login from './Login'
+import Logout from './Logout'
+import PageNotFound from './PageNotFound'
 
 class App extends Component {
   componentDidMount() {
