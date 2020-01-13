@@ -4,7 +4,7 @@ import {
     Card,
     Image,
     Label,
-    Grid,
+    Grid
 } from 'semantic-ui-react'
 
 class Leaderboard extends Component {
@@ -43,7 +43,7 @@ class Leaderboard extends Component {
                     as: 'div',
                     corner: 'left',
                     icon: 'trophy',
-                    color: awardColor,
+                    color: awardColor
                 }
             }
             const answeredQuestions = Object.keys(user.answers).length
