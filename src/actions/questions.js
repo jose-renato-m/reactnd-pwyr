@@ -9,7 +9,7 @@ export const ADD_QUESTION = 'ADD_QUESTION'
 export function loadQuestions (questions) {
     return {
         type: LOAD_QUESTIONS,
-        questions,
+        questions
     }
 }
 
@@ -18,7 +18,7 @@ function answerQuestion({ authedUser, qid, answer }) {
         type: ANSWER_QUESTION,
         authedUser,
         qid,
-        answer,
+        answer
     }
 }
 
@@ -37,7 +37,7 @@ export function handleAnswerQuestion({ authedUser, qid, answer }) {
 function addQuestion({ question }) {
     return {
         type: ADD_QUESTION,
-        question,
+        question
     }
 }
 
