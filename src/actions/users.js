@@ -5,7 +5,7 @@ export const USER_ADDED_QUESTION = 'USER_ADDED_QUESTION'
 export function loadUsers (users) {
     return {
         type: LOAD_USERS,
-        users,
+        users
     }
 }
 
@@ -13,7 +13,7 @@ export function userAddedQuestion({ authedUser, qid }) {
     return {
         type: USER_ADDED_QUESTION,
         authedUser,
-        qid,
+        qid
     }
 }
 
@@ -22,6 +22,6 @@ export function userAnsweredQuestion({ authedUser, qid, answer }) {
         type: USER_ANSWERED_QUESTION,
         answer,
         qid,
-        authedUser,
+        authedUser
     }
 }
