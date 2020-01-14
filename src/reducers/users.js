@@ -1,7 +1,7 @@
 import { 
     LOAD_USERS,
     USER_ADDED_QUESTION,
-    USER_ANSWERED_QUESTION,
+    USER_ANSWERED_QUESTION
 } from '../actions/users'
 
 export default function users (state = {}, action) {
