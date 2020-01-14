@@ -9,7 +9,7 @@ import {
     Button,
     Form,
     Radio,
-    Message,
+    Message
 } from 'semantic-ui-react'
 import { handleAnswerQuestion } from '../actions/questions'
 
@@ -196,7 +196,7 @@ const mapStateToProps = (state) => {
     return {
         authedUser: state.authedUser,
         questions: state.questions,
-        users: state.users,
+        users: state.users
     }
 }
 
