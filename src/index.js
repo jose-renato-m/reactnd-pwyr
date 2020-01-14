@@ -5,6 +5,7 @@ import { loadingBarMiddleware } from 'react-redux-loading-bar'
 import { Provider } from 'react-redux'
 import reducer from './reducers/index'
 import thunk from 'redux-thunk'
+import 'semantic-ui-css/semantic.min.css'
 
 import App from './components/App'
 import './index.css'
