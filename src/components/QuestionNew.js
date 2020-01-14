@@ -6,7 +6,7 @@ import {
     Form,
     Image,
     Input,
-    Message,
+    Message
 } from 'semantic-ui-react'
 import { handleAddQuestion } from '../actions/questions'
 
@@ -44,7 +44,7 @@ class QuestionNew extends Component {
         await this.props.handleAddQuestion({
             optionOneText,
             optionTwoText,
-            author,
+            author
         })
         resetActiveIndexToZero()
         history.push('/')
