@@ -7,7 +7,7 @@ import {
     Image,
     Label,
     Menu,
-    Tab,
+    Tab
 } from 'semantic-ui-react'
 
 class QuestionList extends Component {
@@ -120,7 +120,7 @@ const mapStateToProps = (state) => {
     return {
         questions: sortQuestionsByTimeStamp(state.questions),
         users: state.users,
-        authedUser: state.authedUser,
+        authedUser: state.authedUser
     }
 }
 
