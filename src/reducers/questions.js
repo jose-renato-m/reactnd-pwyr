@@ -1,7 +1,7 @@
 import { 
     LOAD_QUESTIONS,
     ANSWER_QUESTION,
-    ADD_QUESTION,
+    ADD_QUESTION
 } from '../actions/questions'
 
 export default function questions (state = {}, action) {
