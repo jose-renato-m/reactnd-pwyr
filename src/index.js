@@ -8,7 +8,6 @@ import thunk from 'redux-thunk'
 import 'semantic-ui-css/semantic.min.css'
 
 import App from './components/App'
-import './index.css'
 
 const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose
 const store = createStore(
