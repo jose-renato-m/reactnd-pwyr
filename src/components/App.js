@@ -75,9 +75,8 @@ class App extends Component {
                     }}
                    />
                    <Route path='/questions/:question_id' component={QuestionView} />
-                   <Route path='/leaderboard' component={Leaderboard} />
-                   <Route path='/login' component={Login} />
-                   <Route path='/logout' component={Logout} />
+                   <Route path='/leaderboard' component={Leaderboard} />                                     
+                   <Route path='/logout' component={Logout} />                   
                    <Route path='/404' component={PageNotFound} />                   
               </Switch>
             </div>
