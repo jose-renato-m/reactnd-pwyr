@@ -39,7 +39,7 @@ class App extends Component {
       return (
         <BrowserRouter>
             <Switch>
-              <Route path='/' component={Login} />
+              <Route path='/' component={RequiresAuth(Login)} />
             </Switch>
         </BrowserRouter>
       )
