@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import LoadingBar from 'react-redux-loading-bar'
 import { handleInitialData } from '../actions/shared'
 
+import RequiresAuth from './RequiresAuth'
 import Menu from './Menu'
 import Footer from './Footer'
 
