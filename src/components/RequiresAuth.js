@@ -7,6 +7,18 @@ class RequiresAuth extends React.Component {
         redirect: PropTypes.func.isRequired
     }
 
+    componentDidMount() {
+        this._checkAndRedirect()
+    }
+
+    componentDidUpdate() {
+        this._checkAndRedirect()
+    }
+
+    _checkAndRedirect() {
+        const { isAuthenticated, redirect } = this.props
+    }
+
 }
 
 return connect()(RequiresAuth)
