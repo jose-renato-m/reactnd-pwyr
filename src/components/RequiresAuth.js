@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
 
+
 export default function (ComposedComponent) {
     class RequiresAuth extends React.Component {
         static propTypes = {
@@ -38,6 +39,10 @@ export default function (ComposedComponent) {
             isAuthenticated: state.auth.isAuthenticated
         }
     }
+
+    const mapDispatchToProps = dispatch => bindActionCreators({
+
+    })
     
     return connect()(RequiresAuth)
 }
