@@ -23,6 +23,12 @@ class RequiresAuth extends React.Component {
         }
     }
 
+    render() {
+        return (
+            
+        )
+    }
+
 }
 
 return connect()(RequiresAuth)
