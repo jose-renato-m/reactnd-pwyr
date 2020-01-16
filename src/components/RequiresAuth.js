@@ -30,8 +30,13 @@ export default function (ComposedComponent) {
                     { this.props.isAuthenticated ? <ComposedComponent {...this.props} /> : null }
                 </div>
             )
+        }    
+    }
+
+    const mapStateToProps = (state) => {
+        return {
+            isAuthenticated: state.auth.isAuthenticated
         }
-    
     }
     
     return connect()(RequiresAuth)
