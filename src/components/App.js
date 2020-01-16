@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 import LoadingBar from 'react-redux-loading-bar'
 import { handleInitialData } from '../actions/shared'
 
-import RequiresAuth from './RequiresAuth'
 import Menu from './Menu'
 import Footer from './Footer'
 
@@ -39,7 +38,7 @@ class App extends Component {
       return (
         <BrowserRouter>
             <Switch>
-              <Route path='/' component={RequiresAuth(Login)} />
+              <Route path='/' component={Login} />
             </Switch>
         </BrowserRouter>
       )
@@ -57,7 +56,7 @@ class App extends Component {
                   exact            
                   render={() => {
                     return (
-                      <QuestionList
+                      <QuestionList                      
                         handleTabChange={this.handleTabChange}
                         activeIndex={this.state.activeIndex}
                        />
@@ -78,7 +77,7 @@ class App extends Component {
                    <Route path='/questions/:question_id' component={QuestionView} />
                    <Route path='/leaderboard' component={Leaderboard} />                                     
                    <Route path='/logout' component={Logout} />                   
-                   <Route path='/404' component={PageNotFound} />                   
+                   <Route path='/404' component={PageNotFound} />                         
               </Switch>
             </div>
             <Footer />
