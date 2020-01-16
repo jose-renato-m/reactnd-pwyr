@@ -17,6 +17,10 @@ class RequiresAuth extends React.Component {
 
     _checkAndRedirect() {
         const { isAuthenticated, redirect } = this.props
+
+        if (!isAuthenticated) {
+            redirect()
+        }
     }
 
 }
