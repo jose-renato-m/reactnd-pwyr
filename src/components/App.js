@@ -54,7 +54,7 @@ class App extends Component {
               <Switch>
                 <Route
                   path='/'
-                  exact
+                  exact            
                   render={() => {
                     return (
                       <QuestionList
