@@ -46,5 +46,8 @@ export default function (ComposedComponent) {
 
     RequiresAuth.propTypes = propTypes
     
-    return connect()(RequiresAuth)
+    return connect(
+        mapStateToProps,
+        mapDispatchToProps
+    )(RequiresAuth)
 }
