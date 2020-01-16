@@ -42,7 +42,7 @@ export default function (ComposedComponent) {
     }
 
     const mapDispatchToProps = dispatch => bindActionCreators({
-        redirect: () => push('/signin')
+        redirect: () => push('/login')
     }, dispatch)
 
     RequiresAuth.propTypes = PropTypes
