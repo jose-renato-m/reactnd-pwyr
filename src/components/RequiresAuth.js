@@ -27,7 +27,7 @@ export default function (ComposedComponent) {
         render() {
             return (
                 <div>
-    
+                    { this.props.isAuthenticated ? <ComposedComponent {...this.props} /> : null }
                 </div>
             )
         }
