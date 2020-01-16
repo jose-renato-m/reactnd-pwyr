@@ -44,7 +44,7 @@ export default function (ComposedComponent) {
         redirect: () => push('/signin')
     }, dispatch)
 
-    RequiresAuth.propTypes = propTypes
+    RequiresAuth.propTypes = PropTypes
     
     return connect(
         mapStateToProps,
