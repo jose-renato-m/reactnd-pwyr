@@ -103,8 +103,8 @@ class Login extends Component {
     }
 }
 
-const mapStateToProps = ({ users }) => {
-    return { users }
+const mapStateToProps = ({ setAuthedUser, users }) => {
+    return { isAuthenticated: setAuthedUser !== null, users }
 }
 
 export default connect(
