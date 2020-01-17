@@ -46,7 +46,7 @@ class App extends Component {
               <Route path='/login' component={Login} />                
               <Route path='/add' component={QuestionNew} />
               <Route path='/questions/:question_id' component={RequiresAuth(QuestionView)} />
-              <Route path='/leaderboard' component={Leaderboard} />                                     
+              <Route path='/leaderboard' component={RequiresAuth(Leaderboard)} />                                     
               <Route path='/logout' component={Logout} />                   
               <Route path='/404' component={PageNotFound} />    
               <Route path='/' component={QuestionList} />            
