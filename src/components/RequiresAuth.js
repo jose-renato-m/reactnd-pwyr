@@ -8,8 +8,7 @@ import { bindActionCreators } from 'redux'
 export default function (ComposedComponent) {
     class RequiresAuth extends React.Component {
         static propTypes = {
-            isAuthenticated: PropTypes.bool,
-            redirect: PropTypes.func.isRequired
+            isAuthenticated: PropTypes.bool            
         }
     
         componentDidMount() {
