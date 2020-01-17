@@ -38,10 +38,10 @@ class App extends Component {
             <div className='ui main text container' style={{ marginTop: '7em' }}>
               <Switch>
                 <Route path='/' exact component={RequiresAuth(QuestionList)} />
-                <Route path='/login' component={Login} />                
                 <Route path='/add' component={QuestionNew} />
+                <Route path='/login' component={Login} />
                 <Route path='/questions/:question_id' component={RequiresAuth(QuestionView)} />
-                <Route path='/leaderboard' component={RequiresAuth(Leaderboard)} />                                     
+                <Route path='/leaderboard' component={RequiresAuth(Leaderboard)} />                                                     
                 <Route path='/logout' component={Logout} />                   
                 <Route path='/404' component={PageNotFound} />                          
               </Switch>
