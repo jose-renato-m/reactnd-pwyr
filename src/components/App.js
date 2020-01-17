@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   render() {
-    const { authedUser } = this.props
+    const { isAuthenticated } = this.props
 
     if (!authedUser) {
       return (
