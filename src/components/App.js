@@ -39,7 +39,7 @@ class App extends Component {
       <BrowserRouter>
           <Fragment>
             <LoadingBar style={{ zIndex: 1000 }} />
-            <Menu />
+            {isAuthenticated && <Menu />}
             <div className='ui main text container' style={{ marginTop: '7em' }}>
               <Switch>
                 <Route
