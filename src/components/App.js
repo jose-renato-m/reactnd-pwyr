@@ -60,7 +60,7 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
     const { authedUser } = state
-    return { authedUser }
+    return { isAuthenticated: authedUser !== null }
 }
 
 export default connect(
