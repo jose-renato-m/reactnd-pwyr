@@ -14,6 +14,7 @@ import Leaderboard from './Leaderboard'
 import Login from './Login'
 import Logout from './Logout'
 import PageNotFound from './PageNotFound'
+import RequiresAuth from './RequiresAuth'
 
 class App extends Component {
   state = { activeIndex: 0 }
@@ -77,8 +78,8 @@ class App extends Component {
                    <Route path='/questions/:question_id' component={QuestionView} />
                    <Route path='/leaderboard' component={Leaderboard} />                                     
                    <Route path='/logout' component={Logout} />                   
-                   <Route path='/404' component={PageNotFound} />
-                   <Route path='/' component={QuestionList} />
+                   <Route path='/404' component={PageNotFound} />    
+                   <Route path='/' component={QuestionList} />            
               </Switch>
             </div>
             <Footer />
