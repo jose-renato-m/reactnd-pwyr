@@ -49,6 +49,9 @@ class Login extends Component {
         const { message } = this.state
 
         return ( 
+            isAuthenticated ? <Redirect to={this.props.location.state ? this.props.location.state.referrer : '/'} /> : (
+                
+            )
             <div className='ui container'>
                 <div className='ui middle aligned center aligned grid'>
                     <div className='column' style={{ width: '420px', marginTop: '5em' }}>
