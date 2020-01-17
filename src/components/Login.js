@@ -36,7 +36,7 @@ class Login extends Component {
     }
 
     render() {
-        const { users } = this.props
+        const { users, isAuthenticated } = this.props
         if (!users) {
             return
         }
