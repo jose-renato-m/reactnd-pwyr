@@ -2,8 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router'
-import { push } from 'react-router-redux'
-import { bindActionCreators } from 'redux'
 
 export default function (ComposedComponent) {
     class RequiresAuth extends React.Component {
@@ -23,18 +21,9 @@ export default function (ComposedComponent) {
 
     const mapStateToProps = (state) => {
         return {
-            isAuthenticated: state.authedUser.isAuthenticated
+            isAuthenticated: state.authedUser !== null
         }
-    }
-
-    const mapDispatchToProps = dispatch => bindActionCreators({
-        redirect: () => push('/login')
-    }, dispatch)
-
-    RequiresAuth.propTypes = PropTypes
+    }    
     
-    return connect(
-        mapStateToProps,
-        mapDispatchToProps
-    )(RequiresAuth)
+    return connect(mapStateToProps)(RequiresAuth)
 }
