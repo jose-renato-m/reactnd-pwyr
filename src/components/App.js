@@ -16,12 +16,7 @@ import Logout from './Logout'
 import PageNotFound from './PageNotFound'
 import RequiresAuth from './RequiresAuth'
 
-class App extends Component {
-  state = { activeIndex: 0 }
-
-  handleTabChange = (e, { activeIndex }) => {
-    this.setState({ activeIndex })
-  }
+class App extends Component {  
 
   resetActiveIndexToZero = () => {
     this.setState({ activeIndex: 0 })
