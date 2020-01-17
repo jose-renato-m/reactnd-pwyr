@@ -36,10 +36,7 @@ class Login extends Component {
     }
 
     render() {
-        const { users, isAuthenticated } = this.props
-        if (!users) {
-            return
-        }
+        const { users, isAuthenticated } = this.props        
         
         const userOptions = Object.keys(users).map((userID) => ({
             key: userID,
