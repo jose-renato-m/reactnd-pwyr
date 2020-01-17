@@ -11,6 +11,8 @@ import {
 } from 'semantic-ui-react'
 
 class QuestionList extends Component {
+    state = { activeIndex: 0 }
+
     cardItemsPerRow = 2
 
     getCardsFromQuestions = (filterLogic) => {
