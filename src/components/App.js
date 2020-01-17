@@ -33,17 +33,7 @@ class App extends Component {
   }
 
   render() {
-    const { isAuthenticated } = this.props
-
-    if (!authedUser) {
-      return (
-        <BrowserRouter>
-            <Switch>
-              <Route path='/' component={Login} />
-            </Switch>
-        </BrowserRouter>
-      )
-    }
+    const { isAuthenticated } = this.props    
 
     return (
       <BrowserRouter>
