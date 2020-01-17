@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Redirect } from 'react-router'
 import { Dropdown, Image, Message } from 'semantic-ui-react'
 import { setAuthedUser } from '../actions/authedUser'
 
@@ -47,7 +48,7 @@ class Login extends Component {
 
         const { message } = this.state
 
-        return (
+        return ( 
             <div className='ui container'>
                 <div className='ui middle aligned center aligned grid'>
                     <div className='column' style={{ width: '420px', marginTop: '5em' }}>
