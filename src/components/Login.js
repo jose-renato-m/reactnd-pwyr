@@ -14,8 +14,7 @@ class Login extends Component {
         this.setState({ selectedUser: data.value })
     }
 
-    handleUserLogin = () => {
-        const { history } = this.props
+    handleUserLogin = () => {        
         if (!this.state.selectedUser) {
             this.setState({
                 message: {
