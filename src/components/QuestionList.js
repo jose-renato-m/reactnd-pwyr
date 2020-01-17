@@ -58,7 +58,7 @@ class QuestionList extends Component {
     }
 
     render() {
-        const { questions, authedUser, activeIndex, handleTabChange } = this.props
+        const { questions, authedUser, activeIndex } = this.props
 
         const [
             unansweredQuestionsCount,
