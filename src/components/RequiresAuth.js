@@ -10,27 +10,12 @@ export default function (ComposedComponent) {
         static propTypes = {
             isAuthenticated: PropTypes.bool            
         }
-    
-        componentDidMount() {
-            this._checkAndRedirect()
-        }
-    
-        componentDidUpdate() {
-            this._checkAndRedirect()
-        }
-    
-        _checkAndRedirect() {
-            const { isAuthenticated, redirect } = this.props
-    
-            if (!isAuthenticated) {
-                redirect()
-            }
-        }
-    
+
         render() {
             return (
                 <div>
-                    { this.props.isAuthenticated ? <ComposedComponent {...this.props} /> : null }
+                    {this.props.isAuthenticated ? <ComposedComponent {...this.props} /> 
+                    : <Redirect to={{ pathname: '/login', state: { referrer: window.location.pathname}}} />}
                 </div>
             )
         }    
