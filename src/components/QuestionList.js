@@ -103,7 +103,7 @@ class QuestionList extends Component {
                 <Tab 
                     panes={panes}
                     activeIndex={activeIndex}
-                    onTabChange={(e, data) => handleTabChange(e, data)}
+                    onTabChange={(e, data) => this.handleTabChange(e, data)}
                  />
                 </div>
             </div>
