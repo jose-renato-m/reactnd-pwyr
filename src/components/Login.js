@@ -63,9 +63,9 @@ class Login extends Component {
                             width: '85px'
                         }}
                      />
-                     <h2
-                        className='ui black image header'
-                        style={{ marginLeft: '60px', marginBottom: '30px'}}
+                    <h2
+                    className='ui black image header'
+                    style={{ marginLeft: '60px', marginBottom: '30px'}}
                     >
                         <div className='content'>Log-in to your account</div>
                     </h2>
