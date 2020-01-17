@@ -13,6 +13,10 @@ import {
 class QuestionList extends Component {
     state = { activeIndex: 0 }
 
+    handleTabChange = (e, { activeIndex }) => {
+        this.setState({ activeIndex })
+    }
+
     cardItemsPerRow = 2
 
     getCardsFromQuestions = (filterLogic) => {
