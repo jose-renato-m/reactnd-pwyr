@@ -7,17 +7,7 @@ class Login extends Component {
     state = {
         selectedUser: null,
         message: { hidden: true, content: ''}
-    }
-    referrer = null
-
-    componentDidMount() {
-        const {
-            history,
-            location: { pathname }
-        } = this.props
-        this.referrer = pathname
-        history.push('/login')
-    }
+    }    
 
     handleUserSelection = (e, data) => {
         this.setState({ selectedUser: data.value })
