@@ -42,6 +42,7 @@ class App extends Component {
             {isAuthenticated && <Menu />}
             <div className='ui main text container' style={{ marginTop: '7em' }}>
               <Switch>
+                <Route path='/login' component={Login} />
                 <Route path='/' exact component={RequiresAuth(QuestionList)} />
                 <Route path='/add' component={QuestionNew} />
                 <Route path='/questions/:question_id' component={QuestionView} />
