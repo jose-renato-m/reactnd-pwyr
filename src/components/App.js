@@ -45,14 +45,7 @@ class App extends Component {
                 <Route
                   path='/'
                   exact            
-                  render={() => {
-                    return (
-                      <QuestionList                      
-                        handleTabChange={this.handleTabChange}
-                        activeIndex={this.state.activeIndex}
-                       />
-                    )
-                  }}
+                  component={RequiresAuth(QuestionList)}                 
                  />
                  <Route
                     path='/add'
