@@ -14,7 +14,7 @@ class Login extends Component {
         this.setState({ selectedUser: data.value })
     }
 
-    handleUserLogin = () => {        
+    handleUserLogin = () => {             
         if (!this.state.selectedUser) {
             this.setState({
                 message: {
@@ -49,7 +49,7 @@ class Login extends Component {
 
         return ( 
             isAuthenticated ? <Redirect to={this.props.location.state ? this.props.location.state.referrer : '/'} /> : (
-                <div className='ui container'>
+            <div className='ui container'>
                 <div className='ui middle aligned center aligned grid'>
                     <div className='column' style={{ width: '420px', marginTop: '5em' }}>
                       <Image
@@ -62,12 +62,12 @@ class Login extends Component {
                             width: '85px'
                         }}
                      />
-                    <h2
-                    className='ui black image header'
-                    style={{ marginLeft: '60px', marginBottom: '30px'}}
-                    >
+                     <h2
+                        className='ui black image header'
+                        style={{ marginLeft: '60px', marginBottom: '30px'}}
+                     >
                         <div className='content'>Log-in to your account</div>
-                    </h2>
+                     </h2>
                     <form className='ui large form'>
                         <div className='ui raised segment'>
                             <div className='field'>
@@ -77,7 +77,7 @@ class Login extends Component {
                                 selection
                                 options={userOptions}
                                 onChange={this.handleUserSelection}
-                             />
+                               />
                             </div>
                             <Message hidden={message.hidden} negative>
                                 {message.content}
@@ -102,8 +102,8 @@ class Login extends Component {
     }
 }
 
-const mapStateToProps = ({ setAuthedUser, users }) => {
-    return { isAuthenticated: setAuthedUser !== null, users }
+const mapStateToProps = ({ authedUser, users }) => {
+    return { isAuthenticated: authedUser !== null, users }
 }
 
 export default connect(
