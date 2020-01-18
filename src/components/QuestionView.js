@@ -17,7 +17,7 @@ class QuestionView extends Component {
     state = { votedForOption: null, message: { hidden: true, content: '' }}
 
     handleChange = (e, data) => {
-        this.setState({ votedForOption: data.value})
+        this.setState({ votedForOption: data.value })
     }
 
     handleClick = () => {
