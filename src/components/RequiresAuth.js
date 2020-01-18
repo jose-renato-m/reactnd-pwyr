@@ -8,22 +8,23 @@ export default function (ComposedComponent) {
         static propTypes = {
             isAuthenticated: PropTypes.bool            
         }
-
+    
         render() {
             return (
                 <div>
-                    {this.props.isAuthenticated ? <ComposedComponent {...this.props} /> 
-                    : <Redirect to={{ pathname: '/login', state: { referrer: window.location.pathname}}} />}
+                    { this.props.isAuthenticated ? <ComposedComponent {...this.props} /> : <Redirect to={{ pathname: '/login', state: { referrer: window.location.pathname }}} /> }                   
                 </div>
             )
         }    
     }
-
+    
     const mapStateToProps = (state) => {
         return {
             isAuthenticated: state.authedUser !== null
         }
     }    
     
-    return connect(mapStateToProps)(RequiresAuth)
-}
+    return connect(
+        mapStateToProps
+    )(RequiresAuth)
+} 
