@@ -26,7 +26,7 @@ const store = createStore(
 const persistor = persistStore(store)
 
 ReactDOM.render(
-    <Provider store={store}>
+    <Provider store={store} persistor={persistor}>
         <App />   
     </Provider>, 
 document.getElementById('root')
