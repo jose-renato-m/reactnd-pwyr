@@ -11,6 +11,10 @@ import 'semantic-ui-css/semantic.min.css'
 
 import App from './components/App'
 
+const persistConfig = {
+    key: 'users',
+    storage
+}
 const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose
 const store = createStore(
     reducer, 
