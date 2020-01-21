@@ -6,10 +6,14 @@ import { Provider } from 'react-redux'
 import reducer from './reducers/index'
 import thunk from 'redux-thunk'
 import 'semantic-ui-css/semantic.min.css'
+import { createBrowserHistory } from 'history'
 
 import App from './components/App'
 
 const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose
+
+const history = createBrowserHistory()
+
 const store = createStore(
     reducer, 
     composeEnhancers(applyMiddleware(thunk, loadingBarMiddleware()))
