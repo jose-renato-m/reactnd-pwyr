@@ -16,8 +16,6 @@ const persistConfig = {
     storage    
 }
 
-const persistedReducer = persistReducer(persistConfig, reducer)
-
 const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose
 const store = createStore(
     reducer, 
