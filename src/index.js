@@ -9,7 +9,7 @@ import 'semantic-ui-css/semantic.min.css'
 import { createBrowserHistory } from 'history'
 import { connectRouter, routerMiddleware, ConnectedRouter } from 'connected-react-router'
 import App from './components/App'
-import history from './history'
+import record from './record'
 
 const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose
 
@@ -22,7 +22,7 @@ const store = createStore(
 
 ReactDOM.render(
     <Provider store={store}>
-        <ConnectedRouter history={history}>
+        <ConnectedRouter record={record}>
             <App />
         </ConnectedRouter>                 
     </Provider>, 
