@@ -23,7 +23,6 @@ const store = createStore(
     persistedReducer, 
     composeEnhancers(applyMiddleware(thunk, loadingBarMiddleware()))
 )
-const persistor = persistStore(store)
 
 ReactDOM.render(
     <Provider store={store}>         
