@@ -14,8 +14,7 @@ import App from './components/App'
 
 const persistConfig = {
     key: 'users',
-    storage,
-    whitelist: ['users']
+    storage    
 }
 
 const persistedReducer = persistReducer(persistConfig, reducer)
