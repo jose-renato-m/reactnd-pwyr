@@ -42,7 +42,7 @@ class App extends Component {
                 <Route path='/login' component={Login} />
                 <Route path='/questions/:question_id' component={RequiresAuth(QuestionView)} />
                 <Route path='/leaderboard' component={RequiresAuth(Leaderboard)} />                                                     
-                <Route path='/logout' component={Logout} />                   
+                <Route path='/logout' component={Logout} />                
                 <Route path='/404' component={PageNotFound} />                          
               </Switch>
             </div>
