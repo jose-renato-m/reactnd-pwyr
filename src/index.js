@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { createStore, applyMiddleware, compose } from 'redux'
-import { persistStore, persistReducer } from 'redux-persist'
 import { loadingBarMiddleware } from 'react-redux-loading-bar'
 import { Provider } from 'react-redux'
 import reducer from './reducers/index'
