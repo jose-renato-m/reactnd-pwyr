@@ -13,11 +13,11 @@ import history from './history'
 
 const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose
 
-const history = createBrowserHistory()
+const record = createBrowserHistory()
 
 const store = createStore(
-    connectRouter(history)(reducer), 
-    composeEnhancers(applyMiddleware(routerMiddleware(history), thunk, loadingBarMiddleware()))
+    connectRouter(record)(reducer), 
+    composeEnhancers(applyMiddleware(routerMiddleware(record), thunk, loadingBarMiddleware()))
 )
 
 ReactDOM.render(
