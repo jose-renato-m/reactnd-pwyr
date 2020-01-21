@@ -7,7 +7,7 @@ import reducer from './reducers/index'
 import thunk from 'redux-thunk'
 import 'semantic-ui-css/semantic.min.css'
 import { createBrowserHistory } from 'history'
-import { connectRouter, routerMiddleware } from 'connected-react-router'
+import { connectRouter, routerMiddleware, ConnectedRouter } from 'connected-react-router'
 
 import App from './components/App'
 
@@ -21,8 +21,10 @@ const store = createStore(
 )
 
 ReactDOM.render(
-    <Provider store={store}>         
-        <App />         
+    <Provider store={store}>
+        <ConnectedRouter>
+            <App />
+        </ConnectedRouter>                 
     </Provider>, 
 document.getElementById('root')
 )
