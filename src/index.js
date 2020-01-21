@@ -6,23 +6,17 @@ import { Provider } from 'react-redux'
 import reducer from './reducers/index'
 import thunk from 'redux-thunk'
 import 'semantic-ui-css/semantic.min.css'
-import { connectRouter, routerMiddleware } from 'connected-react-router'
-import { ConnectedRouter } from 'connected-react-router'
 import App from './components/App'
-import history from './history'
 
 const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose
 
-const store = createStore(
-    connectRouter(history)(reducer), 
-    composeEnhancers(applyMiddleware(routerMiddleware(history), thunk, loadingBarMiddleware()))
+const store = createStore(reducer,
+    composeEnhancers(applyMiddleware(thunk, loadingBarMiddleware()))
 )
 
 ReactDOM.render(
     <Provider store={store}>
-        <ConnectedRouter history={history}>
-            <App />
-        </ConnectedRouter>                 
+        <App />               
     </Provider>, 
 document.getElementById('root')
 )
