@@ -16,7 +16,7 @@ const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose
 const record = createBrowserHistory()
 
 const store = createStore(
-    connectRouter(record)(reducer), 
+    connectRouter[(record)(reducer)], 
     composeEnhancers(applyMiddleware(routerMiddleware(record), thunk, loadingBarMiddleware()))
 )
 
