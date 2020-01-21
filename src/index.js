@@ -8,7 +8,7 @@ import thunk from 'redux-thunk'
 import 'semantic-ui-css/semantic.min.css'
 import { connectRouter, routerMiddleware, ConnectedRouter } from 'connected-react-router'
 import App from './components/App'
-import record from './record'
+import history from './history'
 
 const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose
 
@@ -19,7 +19,7 @@ const store = createStore(
 
 ReactDOM.render(
     <Provider store={store}>
-        <ConnectedRouter record={record}>
+        <ConnectedRouter history={history}>
             <App />
         </ConnectedRouter>                 
     </Provider>, 
