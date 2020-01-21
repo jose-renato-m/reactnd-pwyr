@@ -7,7 +7,7 @@ import reducer from './reducers/index'
 import thunk from 'redux-thunk'
 import 'semantic-ui-css/semantic.min.css'
 import { createBrowserHistory } from 'history'
-import { connectRouter } from 'connected-react-router'
+import { connectRouter, routerMiddleware } from 'connected-react-router'
 
 import App from './components/App'
 
@@ -17,7 +17,7 @@ const history = createBrowserHistory()
 
 const store = createStore(
     connectRouter(history)(reducer), 
-    composeEnhancers(applyMiddleware(thunk, loadingBarMiddleware()))
+    composeEnhancers(applyMiddleware(routerMiddleware(history), thunk, loadingBarMiddleware()))
 )
 
 ReactDOM.render(
