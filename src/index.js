@@ -13,8 +13,6 @@ import record from './record'
 
 const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose
 
-const history = createBrowserHistory()
-
 const store = createStore(
     connectRouter(history)(reducer), 
     composeEnhancers(applyMiddleware(routerMiddleware(history), thunk, loadingBarMiddleware()))
