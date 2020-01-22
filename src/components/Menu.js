@@ -28,7 +28,7 @@ class Menu extends Component {
                         New Question
                     </NavLink>
                     <NavLink
-                        to='leaderboard'
+                        to='/leaderboard'
                         exact
                         className='item'
                         activeClassName='active'
