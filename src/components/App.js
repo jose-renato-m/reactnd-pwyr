@@ -39,9 +39,9 @@ class App extends Component {
               <Switch>
                 <Route path='/' exact component={RequiresAuth(QuestionList)} />
                 <Route path='/add' component={RequiresAuth(QuestionNew)} />
-                <Route path='/login' component={Login} />
+                <Route path='/login' component={Login} />                
                 <Route path='/questions/:question_id' component={QuestionView} />
-                <Route path='/leaderboard' component={RequiresAuth(Leaderboard)} />                                                     
+                <Route path='/leaderboard' exact component={RequiresAuth(Leaderboard)} />                                                     
                 <Route path='/logout' component={Logout} />                
                 <Route path='/404' component={PageNotFound} />                          
               </Switch>
