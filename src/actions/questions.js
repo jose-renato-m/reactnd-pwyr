@@ -47,7 +47,7 @@ export function handleAddQuestion(newQuestion) {
 
         return saveQuestion(newQuestion).then(
             (question) => {
-                dispatch(userAddedQuestion({ authedUser: author, qid: question.id }))
+                dispatch(userAddedQuestion({ authedUser: question.author, qid: question.id }))
                 dispatch(addQuestion({ question }))
                 dispatch(hideLoading())
             }   
