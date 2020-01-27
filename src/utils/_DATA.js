@@ -156,16 +156,14 @@ let users = {
         questions = {
           ...questions,
           [formattedQuestion.id]: formattedQuestion
-        }
-        
+        }        
         users = {
           ...users,
           [authedUser]: {
-            ...users[authedUser],
+            ...users[authedUser],            
             questions: users[authedUser].questions.concat([formattedQuestion.id])
           }
-        }
-  
+        }  
         res(formattedQuestion)
       }, 1000)
     })
