@@ -6,8 +6,6 @@
   <img src="public/pwyr.gif">
 </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## 📝Description
 
 <p><strong>Would You Rather</strong> is the second project of <strong>Udacity School's React Nanodegree Program</strong> course, and its aims is to build a web app that lets a user play the "Would You Rather?" game. The game goes like this: A user is asked a question in the form: "Would you rather [option A] or [option B]?". Answering "neither" or "both" is against the rules.
