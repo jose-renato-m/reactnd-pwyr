@@ -1,23 +1,51 @@
+<h1 align="center">
+  <img src="https://ik.imagekit.io/dfw3q47dv0/react_redux_logo_LanJJ8148.png">
+</h1>
+
+<h1>
+  <img src="public/pwyr.gif">
+</h1>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## "Would you rather" app
+## 📝Description
 
-### Project:
+<p><strong>Would You Rather</strong> is the second project of <strong>Udacity School's React Nanodegree Program</strong> course, and its aims is to build a web app that lets a user play the "Would You Rather?" game. The game goes like this: A user is asked a question in the form: "Would you rather [option A] or [option B]?". Answering "neither" or "both" is against the rules.
+</p>
 
-This app was built as a project for the Udacity React Nanodegree Program. The purpose of the project is to demonstrate understanding of how Redux works in a React-based web app.
+<p>
+In the app, users will be able to answer questions, see which questions they haven't answered, see how other people have voted, post questions, and see the ranking of users on the leaderboard.
+</p>
 
-### How to install and launch the project
+---
 
-In the project directory, you can run:
+## 💻Used Technologies
 
-#### `npm install`
+- [ReactJS](https://pt-br.reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
+- [Semantic UI](https://react.semantic-ui.com/)
 
-Runs this to install all the project dependencies
+---
 
-#### `npm start`
+## 📁Download
 
-Runs the app in the development mode.
-A new browser window should automatically open displaying the app. If it doesn't, navigate to http://localhost:3000/ in your browser.
+```bash
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+# Clone the repository
+$ git clone https://github.com/jose-renato-m/reactnd-pwyr
+
+# Enter into the directory
+$ cd reactnd-pwyr
+
+# Install dependencies
+$ npm install
+
+# Run the project
+$ npm start
+
+```
+
+---
+
+Made with 💙 by José Renato Montagnana 👋🏻 [Get in touch!](https://www.linkedin.com/in/joserenato-devfullstack/)
